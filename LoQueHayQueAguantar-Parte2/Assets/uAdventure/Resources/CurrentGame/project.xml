@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment> Project Configuration </comment>
+<entry key="Chapter0.EntradaEdificio.X">-257</entry>
+<entry key="Chapter0.EntradaEdificio.Y">9</entry>
+<entry key="Chapter0.Hall.X">62</entry>
+<entry key="Chapter0.Hall.Y">8</entry>
+<entry key="Chapter0.MesasTrabajo.X">328</entry>
+<entry key="Chapter0.MesasTrabajo.Y">44</entry>
+<entry key="Chapter0.Cafe.X">-240</entry>
+<entry key="Chapter0.Cafe.Y">335</entry>
 </properties>
 
