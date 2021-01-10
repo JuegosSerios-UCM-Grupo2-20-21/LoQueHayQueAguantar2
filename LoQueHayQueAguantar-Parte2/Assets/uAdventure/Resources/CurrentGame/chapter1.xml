@@ -49,7 +49,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#3F9A81" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -91,7 +91,7 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#6D389A" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -115,6 +115,49 @@
   <character id="Luis" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/LuisDown.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#CED128" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <active flag="JefeHablado" />
+          <inactive flag="Descanso" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="InvitacionLuis" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Jason" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/JasonDown.eaa.xml" />
       <asset type="standright" uri="assets/special/EmptyAnimation" />
       <asset type="standleft" uri="assets/special/EmptyAnimation" />
@@ -130,7 +173,143 @@
       <asset type="walkleft" uri="assets/special/EmptyAnimation" />
     </resources>
     <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
-      <frontcolor color="#FFFFFF" />
+      <frontcolor color="#4192B2" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <condition>
+          <active flag="JefeHablado" />
+          <inactive flag="Descanso" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="InvitacionJason" />
+          <condition />
+        </effect>
+      </talk-to>
+    </actions>
+  </character>
+  <character id="Diego" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/DiegoDown.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#257122" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Anass" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/AnassDown.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#DB7F3F" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Jonathan" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/JonyDown.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#B0001D" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
+  <character id="Gloria" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/GloriaDown.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#AD2A86" />
       <bordercolor color="#000000" />
     </textcolor>
     <description>
@@ -214,30 +393,253 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <exits>
+      <exit rectangular="yes" x="113" y="16" width="342" height="138" hasInfluenceArea="no" idTarget="Transicion_Mesas_Cafe" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
+        <exit-look text="" cursor-path="" sound-path="" />
+        <condition>
+          <equals var="VariableParaBorrar" value="2" />
+        </condition>
+        <post-effect>
+          <trigger-conversation idTarget="PensamientoPrevioCafe" />
+          <condition />
+        </post-effect>
+      </exit>
+    </exits>
     <objects>
-      <object-ref idTarget="MesaLuis" x="295" y="568" scale="0.994716" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="MesaLuis" x="295" y="568" scale="0.994716" layer="3" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Balta" x="620" y="848" scale="0.6003119" orientation="2" layer="1" hasInfluenceArea="no">
+      <character-ref idTarget="Balta" x="662" y="915" scale="0.6003119" orientation="2" layer="2" hasInfluenceArea="no">
         <condition>
           <inactive flag="JefeHablado" />
         </condition>
       </character-ref>
-      <character-ref idTarget="Luis" x="330" y="678" scale="0.7147415" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Luis" x="330" y="678" scale="0.7147415" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Jason" x="685" y="469" scale="0.2520243" orientation="2" layer="0" hasInfluenceArea="no">
+        <condition>
+          <active flag="JefeHablado" />
+        </condition>
+      </character-ref>
     </characters>
   </scene>
-  <scene id="Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Transicion_Mesas_Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/Cafe.jpg" />
+      <asset type="background" uri="assets/background/fondoNegro.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="CafeLuis" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/CafeEdificio.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="Luis" x="329" y="512" scale="0.5321943" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Luis" x="334" y="842" scale="1.346705" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Anass" x="107" y="443" scale="0.3229835" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Gloria" x="561" y="452" scale="0.3433943" orientation="2" layer="2" hasInfluenceArea="no" />
     </characters>
+    <active-areas>
+      <active-area id="LuisArea" rectangular="no" x="184" y="120" width="273" height="323" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="LuisConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="254" y="176" />
+        <point x="262" y="125" />
+        <point x="334" y="120" />
+        <point x="348" y="228" />
+        <point x="432" y="277" />
+        <point x="457" y="333" />
+        <point x="406" y="443" />
+        <point x="255" y="438" />
+        <point x="229" y="369" />
+        <point x="184" y="352" />
+        <point x="200" y="280" />
+        <point x="234" y="259" />
+        <point x="265" y="233" />
+      </active-area>
+      <active-area id="GloriaArea" rectangular="no" x="418" y="150" width="249" height="308" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="GloriaConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="610" y="150" />
+        <point x="645" y="256" />
+        <point x="664" y="349" />
+        <point x="667" y="444" />
+        <point x="587" y="458" />
+        <point x="418" y="452" />
+        <point x="466" y="341" />
+        <point x="490" y="309" />
+        <point x="517" y="157" />
+      </active-area>
+      <active-area id="AnassArea" rectangular="no" x="-13" y="168" width="256" height="285" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="AnassConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="19" y="228" />
+        <point x="55" y="178" />
+        <point x="162" y="168" />
+        <point x="201" y="252" />
+        <point x="162" y="353" />
+        <point x="219" y="385" />
+        <point x="243" y="446" />
+        <point x="128" y="451" />
+        <point x="-13" y="453" />
+        <point x="6" y="360" />
+      </active-area>
+    </active-areas>
+  </scene>
+  <scene id="CafeJason" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/CafeEdificio.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="Jonathan" x="106" y="453" scale="0.3288234" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Diego" x="562" y="451" scale="0.3662109" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Jason" x="340" y="453" scale="0.3176027" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+    <active-areas>
+      <active-area id="JasonArea" rectangular="no" x="240" y="158" width="191" height="291" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="JasonConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="297" y="158" />
+        <point x="386" y="163" />
+        <point x="411" y="277" />
+        <point x="387" y="310" />
+        <point x="378" y="348" />
+        <point x="410" y="362" />
+        <point x="431" y="373" />
+        <point x="425" y="409" />
+        <point x="404" y="449" />
+        <point x="246" y="448" />
+        <point x="240" y="381" />
+        <point x="273" y="356" />
+        <point x="291" y="321" />
+        <point x="258" y="265" />
+      </active-area>
+      <active-area id="JonathanArea" rectangular="no" x="-32" y="183" width="269" height="283" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="JonyConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="52" y="187" />
+        <point x="150" y="183" />
+        <point x="179" y="266" />
+        <point x="176" y="294" />
+        <point x="183" y="312" />
+        <point x="201" y="335" />
+        <point x="234" y="363" />
+        <point x="237" y="449" />
+        <point x="131" y="457" />
+        <point x="39" y="466" />
+        <point x="-32" y="460" />
+        <point x="-23" y="357" />
+        <point x="33" y="308" />
+        <point x="30" y="263" />
+      </active-area>
+      <active-area id="DiegoArea" rectangular="no" x="417" y="161" width="273" height="288" hasInfluenceArea="no" behaviour="normal">
+        <description>
+          <name>
+          </name>
+          <brief>
+          </brief>
+          <detailed>
+          </detailed>
+        </description>
+        <actions>
+          <use needsGoTo="yes" keepDistance="35" not-effects="no">
+            <effect>
+              <trigger-conversation idTarget="DiegoConver" />
+              <condition />
+            </effect>
+          </use>
+        </actions>
+        <point x="533" y="161" />
+        <point x="635" y="188" />
+        <point x="690" y="448" />
+        <point x="417" y="449" />
+        <point x="444" y="375" />
+        <point x="472" y="332" />
+        <point x="477" y="211" />
+      </active-area>
+    </active-areas>
   </scene>
   <graph-conversation id="ConverPortero">
     <dialogue-node nodeindex="0" editor-x="51" editor-y="14">
@@ -385,6 +787,11 @@
       <condition />
       <speak-char idTarget="Balta">
         <resources name="No name" />
+        <text>Además, también falta Jason, no le quedará mucho.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
         <text>Mucha suerte, ya nos veremos.</text>
       </speak-char>
       <condition />
@@ -413,6 +820,180 @@
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="673" editor-y="514">
       <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="PensamientoPrevioCafe">
+    <dialogue-node nodeindex="0" editor-x="60" editor-y="0">
+      <speak-player>
+        <resources name="No name" />
+        <text>Ha llegado la hora de hacer un descanso.</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ahora, a la cafatería, aunque...</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>A ver con quién me junto.</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+      <effect>
+        <activate flag="Descanso" />
+        <condition />
+      </effect>
+    </dialogue-node>
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="88" editor-y="278" x="88" y="278">
+      <speak-player>
+        <text>Elegir grupo de Luis</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Elegir grupo de Jason</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="615" editor-y="152">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="CafeLuis" x="375" y="435" transitionTime="0" transitionType="0" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="592" editor-y="375">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="CafeJason" x="325" y="337" transitionTime="0" transitionType="0" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="LuisConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Luis</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="GloriaConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Gloria</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="AnassConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>Anass</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Player</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="JonyConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>Jonathan</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Player</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="DiegoConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Diego</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Player</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="JasonConver">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Jason</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Yo Player</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="InvitacionLuis">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Vente conmigo a la cafetería.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Me lo pensaré.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <increment var="VariableParaBorrar" value="1" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="InvitacionJason">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Véngase conmigo a la cafetería mi reina.</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>&lt;&lt;¿Mi reina?&gt;&gt;Eeh, tal vez, muy amable.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <increment var="VariableParaBorrar" value="1" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <object id="MesaLuis" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
