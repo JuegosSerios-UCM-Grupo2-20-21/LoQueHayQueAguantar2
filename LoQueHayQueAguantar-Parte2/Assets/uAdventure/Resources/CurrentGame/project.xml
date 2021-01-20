@@ -3,11 +3,17 @@
 <comment> Project Configuration </comment>
 <entry key="Chapter0.EntradaEdificio.X">-257</entry>
 <entry key="Chapter0.EntradaEdificio.Y">9</entry>
-<entry key="Chapter0.Hall.X">62</entry>
-<entry key="Chapter0.Hall.Y">8</entry>
-<entry key="Chapter0.MesasTrabajo.X">328</entry>
-<entry key="Chapter0.MesasTrabajo.Y">44</entry>
+<entry key="Chapter0.Hall.X">199</entry>
+<entry key="Chapter0.Hall.Y">69</entry>
+<entry key="Chapter0.MesasTrabajo.X">448</entry>
+<entry key="Chapter0.MesasTrabajo.Y">88</entry>
 <entry key="Chapter0.Cafe.X">-240</entry>
 <entry key="Chapter0.Cafe.Y">335</entry>
+<entry key="Chapter0.CafeLuis.X">-56</entry>
+<entry key="Chapter0.CafeLuis.Y">290</entry>
+<entry key="Chapter0.CafeJason.X">432</entry>
+<entry key="Chapter0.CafeJason.Y">295</entry>
+<entry key="Chapter0.Transicion_Mesas_Cafe.X">96</entry>
+<entry key="Chapter0.Transicion_Mesas_Cafe.Y">5</entry>
 </properties>
 
