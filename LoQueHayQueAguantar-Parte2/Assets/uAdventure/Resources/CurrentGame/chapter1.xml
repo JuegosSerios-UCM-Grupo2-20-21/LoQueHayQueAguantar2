@@ -1039,7 +1039,12 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¡Muy buenas! &lt;&lt;A ver ahora de qué hablamos&gt;&gt;</text>
+        <text>¡Muy buenas!</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> *A ver ahora de qué hablamos*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -1066,7 +1071,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="576" editor-y="432">
+    <dialogue-node nodeindex="3" editor-x="779" editor-y="468">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisFinde" />

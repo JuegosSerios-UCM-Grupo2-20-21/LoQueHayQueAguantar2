@@ -167,7 +167,11 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.LoQueHayQueAguantarParte2
+    Standalone: com.DefaultCompany.LoQueHayQueAguantar-Parte2
+    WebGL: com.DefaultCompany.LoQueHayQueAguantar-Parte2
+    iPhone: com.DefaultCompany.LoQueHayQueAguantar-Parte2
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
