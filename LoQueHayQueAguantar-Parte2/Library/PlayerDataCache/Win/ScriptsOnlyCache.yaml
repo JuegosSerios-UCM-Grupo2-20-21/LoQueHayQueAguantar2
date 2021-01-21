@@ -1,0 +1,1612 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - uAdventure.Editor.ChapterVarAndFlagsEditor
+    - uAdventure.Editor.uAdventureWindowMain
+    Assembly-CSharp.dll:
+    - Bounce
+    - BoundaryFactorySettings
+    - GeoPositionedCharacter
+    - MapzenGo.Helpers.Search.SearchPlace
+    - MapzenGo.Helpers.Search.StructSearchData
+    - MapzenGo.Models.CachedDynamicTileManager
+    - MapzenGo.Models.Factories.BoundaryFactory
+    - MapzenGo.Models.Factories.BuildingFactory
+    - MapzenGo.Models.Factories.FlatBuildingFactory
+    - MapzenGo.Models.Factories.LanduseFactory
+    - MapzenGo.Models.Factories.RoadFactory
+    - MapzenGo.Models.Factories.WaterFactory
+    - MapzenGo.Models.PlacesFactory
+    - MapzenGo.Models.Plugins.CustomObjectPlugin
+    - MapzenGo.Models.PoiFactory
+    - MapzenGo.Models.Settings.BuildingFactorySettings
+    - MapzenGo.Models.Settings.EarthFactorySettings
+    - MapzenGo.Models.Settings.LanduseFactorySettings
+    - MapzenGo.Models.Settings.PlacesFactorySettings
+    - MapzenGo.Models.Settings.PoiFactorySettings
+    - MapzenGo.Models.Settings.RoadFactorySettings
+    - MapzenGo.Models.Settings.WaterFactorySettings
+    - MapzenGo.Models.VectorDataPlugin
+    - Simva.SimvaLoadingManager
+    - Simva.SimvaResponseManager
+    - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
+    - dZine4D.Misc.QR.QRReader
+    - uAdventure.Geo.ExtElemFactory
+    - uAdventure.Geo.GeoElementFactory
+    - uAdventure.Geo.GeoElementMB
+    - uAdventure.Geo.GeoPositioner
+    - uAdventure.Geo.MapImagePlugin
+    - uAdventure.Geo.MapSceneMB
+    - uAdventure.Geo.NavigationController
+    - uAdventure.Geo.uAdventurePlugin
+    - uAdventure.QR.QRScanner
+    - uAdventure.Runner.ActiveAreaMB
+    - uAdventure.Runner.Area
+    - uAdventure.Runner.AtrezzoMB
+    - uAdventure.Runner.AutoGlower
+    - uAdventure.Runner.Blur
+    - uAdventure.Runner.Bubble
+    - uAdventure.Runner.ButtonMB
+    - uAdventure.Runner.CharacterMB
+    - uAdventure.Runner.ExitMB
+    - uAdventure.Runner.Game
+    - uAdventure.Runner.Inventory
+    - uAdventure.Runner.InventorySlider
+    - uAdventure.Runner.ItemParticle
+    - uAdventure.Runner.Mover
+    - uAdventure.Runner.ObjectMB
+    - uAdventure.Runner.OptionMB
+    - uAdventure.Runner.PlayerMB
+    - uAdventure.Runner.Representable
+    - uAdventure.Runner.SceneMB
+    - uAdventure.Runner.TransitionManager
+    - uAdventure.Runner.Transparent
+    - uAdventure.Runner.UIItem
+    - uAdventure.Runner.UITimerController
+    - uAdventure.Simva.LoginController
+    - uAdventure.Simva.SurveyController
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.HorizontalLayoutGroup
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.Outline
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
+  sceneClasses:
+    Assets/Scenes/SampleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 626}
+    - Class: 114
+      Script: {instanceID: 14076}
+    - Class: 114
+      Script: {instanceID: 14102}
+    - Class: 114
+      Script: {instanceID: 14116}
+    - Class: 114
+      Script: {instanceID: 14296}
+    - Class: 114
+      Script: {instanceID: 14308}
+    - Class: 114
+      Script: {instanceID: 14342}
+    - Class: 114
+      Script: {instanceID: 14352}
+    - Class: 114
+      Script: {instanceID: 14470}
+    - Class: 114
+      Script: {instanceID: 14516}
+    - Class: 114
+      Script: {instanceID: 14540}
+    - Class: 114
+      Script: {instanceID: 14584}
+    - Class: 114
+      Script: {instanceID: 14618}
+    - Class: 114
+      Script: {instanceID: 14730}
+    - Class: 114
+      Script: {instanceID: 14752}
+    - Class: 114
+      Script: {instanceID: 14780}
+    - Class: 114
+      Script: {instanceID: 14902}
+    - Class: 114
+      Script: {instanceID: 14928}
+    - Class: 114
+      Script: {instanceID: 14940}
+    - Class: 114
+      Script: {instanceID: 15098}
+    - Class: 114
+      Script: {instanceID: 15180}
+    - Class: 114
+      Script: {instanceID: 15222}
+    - Class: 114
+      Script: {instanceID: 15238}
+    - Class: 114
+      Script: {instanceID: 15408}
+    - Class: 114
+      Script: {instanceID: 15452}
+    - Class: 114
+      Script: {instanceID: 15476}
+    - Class: 114
+      Script: {instanceID: 15506}
+    - Class: 114
+      Script: {instanceID: 15628}
+    - Class: 114
+      Script: {instanceID: 15646}
+    - Class: 114
+      Script: {instanceID: 15736}
+    - Class: 114
+      Script: {instanceID: 15774}
+    - Class: 114
+      Script: {instanceID: 15810}
+    - Class: 114
+      Script: {instanceID: 15812}
+    - Class: 114
+      Script: {instanceID: 15894}
+    - Class: 114
+      Script: {instanceID: 15912}
+    - Class: 114
+      Script: {instanceID: 15980}
+    - Class: 114
+      Script: {instanceID: 16012}
+    - Class: 114
+      Script: {instanceID: 16182}
+    - Class: 114
+      Script: {instanceID: 16192}
+    - Class: 114
+      Script: {instanceID: 16200}
+    - Class: 114
+      Script: {instanceID: 16314}
+    - Class: 114
+      Script: {instanceID: 16364}
+    - Class: 114
+      Script: {instanceID: 16644}
+    - Class: 114
+      Script: {instanceID: 16650}
+    - Class: 114
+      Script: {instanceID: 16700}
+    - Class: 114
+      Script: {instanceID: 16726}
+    - Class: 114
+      Script: {instanceID: 16782}
+    - Class: 114
+      Script: {instanceID: 16850}
+    - Class: 114
+      Script: {instanceID: 17002}
+    - Class: 114
+      Script: {instanceID: 17082}
+    - Class: 114
+      Script: {instanceID: 17112}
+    - Class: 114
+      Script: {instanceID: 17118}
+    - Class: 114
+      Script: {instanceID: 17272}
+    - Class: 114
+      Script: {instanceID: 17358}
+    - Class: 114
+      Script: {instanceID: 17694}
+    - Class: 114
+      Script: {instanceID: 17730}
+    - Class: 114
+      Script: {instanceID: 17806}
+    - Class: 114
+      Script: {instanceID: 17830}
+    - Class: 114
+      Script: {instanceID: 17930}
+    - Class: 114
+      Script: {instanceID: 17996}
+    - Class: 114
+      Script: {instanceID: 18010}
+    - Class: 114
+      Script: {instanceID: 18016}
+    - Class: 114
+      Script: {instanceID: 18144}
+    - Class: 114
+      Script: {instanceID: 18250}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 750a0ad8694504c90a2b251fd8cb0931
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: InventorySlider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: AtrezzoMB
+  - hash:
+      serializedVersion: 2
+      Hash: afa4e9378a5395a350e3ad01dc182cd6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: GeoElementFactory
+  - hash:
+      serializedVersion: 2
+      Hash: c42672c997f8be6b1aa86a927ebea785
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx
+    className: MainThreadDispatcher
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableCancelTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: b4fc42b020df4b67385e61ff21d513cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableMoveTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Characters.ThirdPerson
+    className: AICharacterControl
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Simva
+    className: SimvaSceneHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Mover
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableUpdateTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 413f05f1cee8e9eb5143840b05fada1b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: BuildingFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableVisibleTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 4199cf1c5f6e90b3481bfa588ff252af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: SceneMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ActiveAreaMB
+  - hash:
+      serializedVersion: 2
+      Hash: ca910f344cf61e78b3f04492ad1faa3e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ItemParticle
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: TopMenu
+  - hash:
+      serializedVersion: 2
+      Hash: a5781dc71a671b1ad2b38de19f24b71f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: fec48408fbf5d5feecb2eb5ae23b101a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Poi
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: e1e6e7b22c7753eb3962d4120c36ddc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: InventoryManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 1162cd557c83a418bf81c3b69650127f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: BoundaryFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Core
+    className: ColorConverter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 3a33131b496eae71108231412f0fb504
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: MapSceneMBFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: MapImagePlugin
+  - hash:
+      serializedVersion: 2
+      Hash: 234d407605354852c48e57df17c9a1c6
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 39f41faa52ca231c2a42b3004fbcee00
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Simva
+    className: LoginController
+  - hash:
+      serializedVersion: 2
+      Hash: 515b3fd517dab2701ee003bf9d6ff2e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Building
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: SceneChangerMB
+  - hash:
+      serializedVersion: 2
+      Hash: 3f03840e9ae58e8439f8c0e0ca285d33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: LanduseFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9f28599208cff3f9b24dbf1308d56e11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: NavigationController
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservablePointerClickTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8cee20442006bff3dfb4826cf62e51ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.QR
+    className: QRScanner
+  - hash:
+      serializedVersion: 2
+      Hash: 92b26ae263ba17a18761f82b9c841de6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: WaterFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableDestroyTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: bd3cf68c8964d3c66d1c43f4f98508c9
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 73bb7b4620d6f773cef217a1985af4b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: PlacesFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: GameButtonMB
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableJointTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 1103fb0758976355cdf9b7d5ce9cb7e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Plugins
+    className: Plugin
+  - hash:
+      serializedVersion: 2
+      Hash: fec48408fbf5d5feecb2eb5ae23b101a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Earth
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Area
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableUpdateSelectedTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableScrollTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: fec48408fbf5d5feecb2eb5ae23b101a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Place
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Core
+    className: Language
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: UIItem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableEndDragTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 4efba02516fb58e370fa63c296c316ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: TimerController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableLateUpdateTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 59352e363a59831d96e3ab2b354cd636
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bounce
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: CharacterMB
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Simva
+    className: OpenIdListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: PlayerFollower
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 5201afe0689db1840fd4d81bafd27016
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: PoiFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb27be807aa299702f28ad0bcad1f46
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 3302f760ee9afbf2a0600360d935596b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: TileManager
+  - hash:
+      serializedVersion: 2
+      Hash: a5fc41630ee152e4bd8d3fbee9465a17
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Inventory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ExitMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: CustomEffectRunnerFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 5cc439bf63c0539d39588e69465ac2ab
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: ee15c5afe70061f7cab672f784a130b5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoundaryFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservablePointerExitTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 36e809ae0f549491af6be27e9f22f7a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: PoiFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: manifest
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableDropTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 2fd99b1484ba52071e87ba7ca7bb4363
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: LanduseFactory
+  - hash:
+      serializedVersion: 2
+      Hash: edb7a2eeb459884179026221afd926bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: MapElementFactory
+  - hash:
+      serializedVersion: 2
+      Hash: c679776198a30ec23790d1d356fe01ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Characters.ThirdPerson
+    className: ThirdPersonCharacter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ScreenLogger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableEventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Transparent
+  - hash:
+      serializedVersion: 2
+      Hash: 36bb31786dabecfdabbf2e28eca0f80b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: BuildingFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Unity
+    className: UnitySceneRunner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Simva
+    className: SimvaExtension
+  - hash:
+      serializedVersion: 2
+      Hash: 9299d96ff74d6644ceecd22d2933123a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: VectorDataPlugin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Simva
+    className: SurveyController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableBeginDragTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableEnableTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 3302f760ee9afbf2a0600360d935596b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: DynamicTileManager
+  - hash:
+      serializedVersion: 2
+      Hash: b8133ea99ae54e6a0722774a7e8ffb5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: ExtElemFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ObjectMB
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Characters.ThirdPerson
+    className: ThirdPersonUserControl
+  - hash:
+      serializedVersion: 2
+      Hash: 5251c00ed22ab775472055e4913ee42a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Bubble
+  - hash:
+      serializedVersion: 2
+      Hash: 6d2f2599c22d0c83fee86905f8701906
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: OptionMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PreviewManager
+  - hash:
+      serializedVersion: 2
+      Hash: ab1b6b171446fc9edb86115b18578b5b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: TransitionManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableAnimatorTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: PlayerMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableSelectTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 220bd265f54cc4cee8f1539ad2b2c64a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: SceneMBFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Analytics
+    className: AnalyticsExtension
+  - hash:
+      serializedVersion: 2
+      Hash: 8c1f06f38e470867620d81378a903a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: MenuMB
+  - hash:
+      serializedVersion: 2
+      Hash: 85f6f4d953072cefc372cb8289bcc895
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: ButtonCreatorMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: DotAnimater
+  - hash:
+      serializedVersion: 2
+      Hash: 4f7899580e8c85a538271e356b7dc5f6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: uAdventurePlugin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Plugins
+    className: CustomObjectPlugin
+  - hash:
+      serializedVersion: 2
+      Hash: 6964972ad3aaf542bdda3d7a047b631a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: EarthFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ButtonMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableMouseTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 4e72092140b40b6c7191f19784789d78
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: UITimerController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableTriggerTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: f84d945e5e1ca985698660fc26e9657f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: fec48408fbf5d5feecb2eb5ae23b101a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Water
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableCollisionTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableTrigger2DTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Tile
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableParticleTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservablePointerDownTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: a12009ab59398f0061e139ae4e9181f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: PathShower
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableInitializePotentialDragTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 5a7c10c5ccd0751acf3f241749184328
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: WaterFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: GeoPositioner
+  - hash:
+      serializedVersion: 2
+      Hash: 36bb31786dabecfdabbf2e28eca0f80b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: FlatBuildingFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 393294832338c10c55c35022c89f68d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: RAGE.Analytics
+    className: Tracker
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: c9a8b80298a116835b51ba1cf9284367
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: ebf2885cf7d6c8318545d2916ede942d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Landuse
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 344a8c2e106a0a4e098e91a52e0af063
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableTransformChangedTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 87ad3705a58f19c47136728d4a6e9c47
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 103da644194edf98224992d8adbba40a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GeoPositionedCharacter
+  - hash:
+      serializedVersion: 2
+      Hash: b6946b24c5b94c4f98d73a8583c29591
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Road
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: uAdventureRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: c1933cc0a2f4ff6eb13333347497beb3
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 342a1e41d3aa8fb9e6bee4fde7588ee4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Simva
+    className: SimvaLoadingManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservablePointerUpTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 6c298e288e55e68ad3598693183c2c51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: GeoExtension
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: ScenePositioner
+  - hash:
+      serializedVersion: 2
+      Hash: 3302f760ee9afbf2a0600360d935596b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: CachedDynamicTileManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1412ca6d9171d260489e30961f8bf764
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: GeoElementMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Representable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableCollision2DTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 230917797dd145b591296707cb32d1d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: EarthFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservablePointerEnterTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 6939772cb3ce775a8e8d99f332534491
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: cb7490a40b7f81131754987129cb7008
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Simva
+    className: SimvaResponseManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableFixedUpdateTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: f336e086360abe49a3323e5f1583c35a
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: b2909e20135b37e041984c5a4be2517b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: Factory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.GameSelector
+    className: LoaderMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableDeselectTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableDragTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Billboard
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: UIRepresentable
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 90f58cc6897a58424f4a6e3c79f2a143
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: uAdventureInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 69442c3093a40356403d1c994d163ca4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Game
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableRectTransformTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 4a28777dd0a5b8707509736e03d2e0b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: AutoGlower
+  - hash:
+      serializedVersion: 2
+      Hash: 3f3aa3718374ff265cedc2f36bc04052
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Factories
+    className: RoadFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 1dc0e564d8b6540d7320681158957525
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Geo
+    className: MapSceneMB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableCanvasGroupChangedTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 383e86c6adb85d73eb2dadef1d027020
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: dZine4D.Misc.QR
+    className: QRReader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: Blur
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableStateMachineTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: cb4c1b8b96309304b365a1c75306d506
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models.Settings
+    className: RoadFactorySettings
+  - hash:
+      serializedVersion: 2
+      Hash: e326c548a6d97aead41abc977009df6a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Helpers.Search
+    className: SearchPlace
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: FFMPEG
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: b6946b24c5b94c4f98d73a8583c29591
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: Boundary
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Core
+    className: Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniRx.dll
+    namespaceName: UniRx.Triggers
+    className: ObservableSubmitTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 5dea360fb0b147724ac344e6f399c2f3
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 19143dcea2aa6ad64b07ed331c25f512
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Helpers.Search
+    className: StructSearchData
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ae6613077885b0181dd221eb7b1e4657
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: MapzenGo.Models
+    className: PlacesFactory
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: uAdreturn
+  - hash:
+      serializedVersion: 2
+      Hash: 04abf35d9007d5e128774bd762fdfa63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: uAdventure.Runner
+    className: GUIManager
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  platform: 5
+  scenePathNames:
+  - Assets/Scenes/SampleScene.unity
+  playerPath: "C:/Users/anaana/Desktop/Desarrollo de videojuegos/3\xBA/Juegos Serios/LoQueHayQueAguantar2/Builds/LoQueHayQueAguantar-Parte2.exe"
