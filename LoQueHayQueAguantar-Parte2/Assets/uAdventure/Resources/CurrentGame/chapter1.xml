@@ -1141,6 +1141,14 @@
         <effect>
           <increment var="VariableParaBorrar" value="1" />
           <condition />
+          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="0" transitionType="0" />
+          <condition>
+            <greater-equals-than var="VariableParaBorrar" value="2" />
+          </condition>
+          <trigger-conversation idTarget="PensamientoPrevioCafe" />
+          <condition>
+            <greater-equals-than var="VariableParaBorrar" value="2" />
+          </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1161,6 +1169,14 @@
         <effect>
           <increment var="VariableParaBorrar" value="1" />
           <condition />
+          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="0" transitionType="0" />
+          <condition>
+            <greater-equals-than var="VariableParaBorrar" value="2" />
+          </condition>
+          <trigger-conversation idTarget="PensamientoPrevioCafe" />
+          <condition>
+            <greater-equals-than var="VariableParaBorrar" value="2" />
+          </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
