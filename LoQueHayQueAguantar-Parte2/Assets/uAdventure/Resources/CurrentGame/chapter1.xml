@@ -1084,45 +1084,154 @@
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Jonathan">
         <resources name="No name" />
-        <text>Esta parte aún está en desarrollo, ve al Grupo de Luis.</text>
+        <text>Bueno, pues aquí estamos, estos son Jason y Diego</text>
       </speak-char>
       <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¿Qué tal?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>¿Qué hay?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" editor-x="324" editor-y="90" x="324" y="90">
+      <speak-player>
+        <text>*Hablar sobre vida personal*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>*Hablar sobre el trabajo*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="618" editor-y="78">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeLuis" x="325" y="337" transitionTime="0" transitionType="0" />
+          <trigger-conversation idTarget="ConverGrupoJonyVida" />
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="620" editor-y="306">
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="DiegoConver">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>Esta parte aún está en desarrollo, ve al Grupo de Luis.</text>
+        <text>Hola buenas, ¿qué tal?</text>
       </speak-char>
       <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Yo soy Diego, encantado</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Y yo Jason. Un placer</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Buenas, soy Alexis</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" editor-x="323" editor-y="87" x="323" y="87">
+      <speak-player>
+        <text>*Hablar sobre vida personal*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>*Hablar sobre el trabajo*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="638" editor-y="66">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeLuis" x="325" y="337" transitionTime="0" transitionType="0" />
+          <trigger-conversation idTarget="ConverGrupoJonyVida" />
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="620" editor-y="315">
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="JasonConver">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Esta parte aún está en desarrollo, ve al Grupo de Luis.</text>
+        <text>¡Vaya, qué sorpresa tan agradable!</text>
       </speak-char>
       <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Hola guapa, déjame que me presente</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Soy Jason, y este de aquí es Diego</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" editor-x="285" editor-y="50" x="285" y="50">
+      <speak-player>
+        <text>Encantada, yo soy Alexis</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>*¿Guapa?* Alexis, un placer</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+    </option-node>
+    <option-node nodeindex="2" editor-x="574" editor-y="92" x="574" y="92">
+      <speak-player>
+        <text>*Hablar sobre vida personal*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>*Hablar sobre el trabajo*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="3" editor-x="856" editor-y="89">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeLuis" x="325" y="337" transitionTime="0" transitionType="0" />
+          <trigger-conversation idTarget="ConverGrupoJonyVida" />
           <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="844" editor-y="288">
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="InvitacionLuis">
@@ -2661,6 +2770,373 @@
       </speak-char>
       <condition />
       <child nodeindex="9" />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="ConverGrupoJonyVida">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>¿Qué tal te va todo? ¿Te acostumbras a tu nuevo puesto?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Poquito a poco</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>Si alguna vez necesitas ayuda, ya sabes dónde encontrarme. *guiño*</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>&lt;&lt;¿Me ha guiñado un ojo?&gt;&gt; Gracias</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¡Eh! Relaja, que acaba de llegar a la empresa</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Eso, todavía ni la conoces</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> &lt;&lt;¿Hola? ¿Por qué hablan de mí como si no estuviera?&gt;&gt;</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Además, a lo mejor luego es como Andrea</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>&lt;&lt;¿¿Hola?? ¿¿Sigo aquí??&gt;&gt;</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" editor-x="319" editor-y="81" x="319" y="81">
+      <speak-player>
+        <text>*Decir algo*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>*Esperar a ver a dónde lleva la conversación*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="584" editor-y="15">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Como Andrea? ¿Qué pasa, que ella también es rubia?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>Jajaja. Guapa y graciosa. Me caes bien</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Gracias?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>De nada. *guiño*</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Lo que es, es una guarra</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Eh, que estás hablando de mi novia</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Pues parece que no lo sabe. Como este fin de semana, que se ha ido de viaje con sus “amigos”</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>No sé por qué tienes novia, si luego la dejas irse con cualquiera</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="324" editor-y="441">
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¿Pero de verdad sigues sufriendo por esa guarra?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Buah, es que cada vez parece que le importo menos</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¿Y eso?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Os acordáis de que se fue de viaje con sus amigos, ¿no?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Todavía no entiendo cómo la dejaste</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="5" />
+    </dialogue-node>
+    <option-node nodeindex="4" editor-x="864" editor-y="58" x="864" y="58">
+      <speak-player>
+        <text>*Qué bueno es, que le “deja” irse con sus amigos*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+      <speak-player>
+        <text>*Mejor me callo. No debería meterme en cosas de pareja*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+    </option-node>
+    <option-node nodeindex="5" editor-x="577" editor-y="443" x="577" y="443">
+      <speak-player>
+        <text>*Interrumpir*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="7" />
+      <speak-player>
+        <text>*Seguir esperando a ver qué más dicen*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+    </option-node>
+    <dialogue-node nodeindex="6" editor-x="1359" editor-y="56">
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Porque confío en ella. Pero mira esto</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>*Saca el móvil* Mira qué foto ha subido a Fotogram</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¡Pero si casi se le ve hasta el alma!</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text> Le queda muy bien ese bikini</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Tío, que estás hablando de mi novia</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="8" />
+    </dialogue-node>
+    <dialogue-node nodeindex="7" editor-x="931" editor-y="566">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Dejarla? ¿Necesita su permiso para irse de viaje?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text> Es su novia, ¿no? Digo yo que estas cosas se deciden en pareja</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Claro, si no la relación se vuelve tóxica</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="9" />
+    </dialogue-node>
+    <dialogue-node nodeindex="8" editor-x="2349" editor-y="341">
+      <speak-player>
+        <resources name="No name" />
+        <text>*No aguanto más*</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="10" />
+    </dialogue-node>
+    <option-node nodeindex="9" editor-x="1190" editor-y="549" x="1190" y="549">
+      <speak-player>
+        <text>¿Es tóxica si no hace lo que tú quieres?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="11" />
+      <speak-player>
+        <text>¿Y no se vuelve tóxica si le dices lo que puede y no puede hacer?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="12" />
+    </option-node>
+    <option-node nodeindex="10" editor-x="2612" editor-y="280" x="2612" y="280">
+      <speak-player>
+        <text>*Defender a Andrea*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="13" />
+      <speak-player>
+        <text>*Cambiar de tema*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="14" />
+    </option-node>
+    <dialogue-node nodeindex="11" editor-x="1448" editor-y="446">
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>No es lo que él “quiera”. Se trata de lo que ella debería hacer</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Y de lo que no debería también</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Como por ejemplo...?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Debería preguntarle a su novio si le parece bien que desaparezca todo el fin de semana</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Y no debería subir fotos como esta. *Saca el móvil* </text>
+      </speak-char>
+      <condition />
+      <child nodeindex="15" />
+    </dialogue-node>
+    <dialogue-node nodeindex="12" editor-x="1423" editor-y="751">
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="13" editor-x="2866" editor-y="191">
+      <speak-player>
+        <resources name="No name" />
+        <text>Pues a mí me parece muy bien que se haga fotos en bikini. Y que se vaya de viaje. Y que tenga amigos</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Pero bueno, lo hecho hecho está, mejor hablamos de otra cosa</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="16" />
+    </dialogue-node>
+    <dialogue-node nodeindex="14" editor-x="2948" editor-y="406">
+      <speak-player>
+        <resources name="No name" />
+        <text> Bueno, lo hecho, hecho está. Lo mejor sería hablar de otra cosa</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="16" />
+    </dialogue-node>
+    <option-node nodeindex="15" editor-x="1705" editor-y="567" x="1705" y="567">
+      <speak-player>
+        <text>¿Le vigilas su Fotogram?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="17" />
+      <speak-player>
+        <text>¿Qué pasa? Sale guapísima</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="18" />
+    </option-node>
+    <option-node nodeindex="16" keepShowing="yes" editor-x="3212" editor-y="249" x="3212" y="249">
+      <speak-player>
+        <text>*Hablar sobre aficiones*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="19" />
+      <speak-player>
+        <text>*Hablar del próximo fin de semana*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="20" />
+    </option-node>
+    <dialogue-node nodeindex="17" editor-x="1963" editor-y="477">
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>¿Vigilar? Relaja, solo la sigue. Son pareja, tampoco es tan raro</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>Debería confiar un poco más en ella, subir una foto en bikini no es para tanto</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>¿Vas a darme lecciones de cómo cuidar de mi pareja?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Es mi novia, tío, déjame que haga lo que me parezca</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="8" />
+    </dialogue-node>
+    <dialogue-node nodeindex="18" editor-x="1966" editor-y="749">
+      <speak-char idTarget="Jonathan">
+        <resources name="No name" />
+        <text>Sí, ese bikini le queda muy bien. No veo el problema en que quiera enseñarlo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>El problema es que tiene novio</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="8" />
+    </dialogue-node>
+    <dialogue-node nodeindex="19" editor-x="3479" editor-y="189">
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="20" editor-x="3482" editor-y="424">
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <object id="MesaLuis" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
