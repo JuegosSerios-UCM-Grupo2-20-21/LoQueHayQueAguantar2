@@ -144,18 +144,35 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Conver1</documentation>
         <condition>
           <active flag="JefeHablado" />
           <inactive flag="Descanso" />
+          <less-than var="ConverLuisJason" value="2" />
+          <inactive flag="LuisPresentado" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="InvitacionLuis" />
+          <trigger-conversation idTarget="InvitacionLuis_1" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Conver2</documentation>
+        <condition>
+          <active flag="JefeHablado" />
+          <inactive flag="Descanso" />
+          <greater-equals-than var="ConverLuisJason" value="2" />
+          <less-than var="ConverLuisJason" value="4" />
+          <inactive flag="LuisInvitado" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="InvitacionLuis_2" />
           <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
-  <character id="Jason" behaviour="normal">
+  <character id="Jony" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/JasonDown.eaa.xml" />
@@ -187,12 +204,29 @@
     <voice name="" synthesizeAlways="no" />
     <actions>
       <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Conver1</documentation>
         <condition>
           <active flag="JefeHablado" />
           <inactive flag="Descanso" />
+          <less-than var="ConverLuisJason" value="2" />
+          <inactive flag="JonyPresentado" />
         </condition>
         <effect>
-          <trigger-conversation idTarget="InvitacionJason" />
+          <trigger-conversation idTarget="InvitacionJony_1" />
+          <condition />
+        </effect>
+      </talk-to>
+      <talk-to needsGoTo="yes" keepDistance="35" not-effects="no">
+        <documentation>Conver2</documentation>
+        <condition>
+          <active flag="JefeHablado" />
+          <inactive flag="Descanso" />
+          <greater-equals-than var="ConverLuisJason" value="2" />
+          <less-than var="ConverLuisJason" value="4" />
+          <inactive flag="JonyInvitado" />
+        </condition>
+        <effect>
+          <trigger-conversation idTarget="InvitacionJony_2" />
           <condition />
         </effect>
       </talk-to>
@@ -260,7 +294,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <character id="Jonathan" behaviour="normal">
+  <character id="Jason" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
       <asset type="standdown" uri="assets/animation/JonyDown.eaa.xml" />
@@ -322,7 +356,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="EntradaEdificio" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="EntradaEdificio" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -384,7 +418,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="MesasTrabajo" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="MesasTrabajo_1" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -393,33 +427,33 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
-    <exits>
-      <exit rectangular="yes" x="113" y="16" width="342" height="138" hasInfluenceArea="no" idTarget="Transicion_Mesas_Cafe" destinyY="-2147483648" destinyX="-2147483648" destinyScale="1" transitionType="0" transitionTime="0" not-effects="no">
-        <exit-look text="" cursor-path="" sound-path="" />
-        <condition>
-          <equals var="VariableParaBorrar" value="2" />
-        </condition>
-        <post-effect>
-          <trigger-conversation idTarget="PensamientoPrevioCafe" />
-          <condition />
-        </post-effect>
-      </exit>
-    </exits>
     <objects>
-      <object-ref idTarget="MesaLuis" x="295" y="568" scale="0.994716" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="MesaLuis" x="292" y="568" scale="1" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Balta" x="662" y="915" scale="0.6003119" orientation="2" layer="2" hasInfluenceArea="no">
+      <character-ref idTarget="Balta" x="662" y="915" scale="0.6003119" orientation="2" layer="1" hasInfluenceArea="no">
         <condition>
           <inactive flag="JefeHablado" />
         </condition>
       </character-ref>
-      <character-ref idTarget="Luis" x="330" y="678" scale="0.7147415" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Jason" x="685" y="469" scale="0.2520243" orientation="2" layer="0" hasInfluenceArea="no">
-        <condition>
-          <active flag="JefeHablado" />
-        </condition>
-      </character-ref>
+      <character-ref idTarget="Luis" x="330" y="678" scale="0.72" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="MesasTrabajo_2" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/MesasTrabajo.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="MesaLuis" x="292" y="568" scale="1" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="Luis" x="330" y="678" scale="0.72" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Jony" x="712" y="471" scale="0.2367462" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Transicion_Mesas_Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -535,7 +569,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="CafeJason" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="CafeJony" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -545,12 +579,12 @@
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="Jonathan" x="106" y="453" scale="0.3288234" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Jason" x="106" y="453" scale="0.3288234" orientation="2" layer="2" hasInfluenceArea="no" />
       <character-ref idTarget="Diego" x="562" y="451" scale="0.3662109" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Jason" x="340" y="453" scale="0.3176027" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Jony" x="340" y="453" scale="0.3176027" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="JasonArea" rectangular="no" x="240" y="158" width="191" height="291" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="JonyArea" rectangular="no" x="240" y="158" width="191" height="291" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -582,7 +616,7 @@
         <point x="291" y="321" />
         <point x="258" y="265" />
       </active-area>
-      <active-area id="JonathanArea" rectangular="no" x="-32" y="183" width="269" height="283" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="JasonArea" rectangular="no" x="-32" y="183" width="269" height="283" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -641,6 +675,26 @@
       </active-area>
     </active-areas>
   </scene>
+  <scene id="EscenaTransicionNegro" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondoNegro.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="EscenaComienzoJuego" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
   <graph-conversation id="ConverPortero">
     <dialogue-node nodeindex="0" editor-x="51" editor-y="14">
       <speak-char idTarget="Recepcionista">
@@ -650,7 +704,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>&lt;&lt; ¿No se acuerda de mí? Casi que mejor, la verdad &gt;&gt;</text>
+        <text>*¿No se acuerda de mí? Casi que mejor, la verdad*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -680,7 +734,7 @@
       <condition />
       <child nodeindex="1" />
       <effect>
-        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">&lt;&lt;Se escucha el sonido del teléfono&gt;&gt;</show-text>
+        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">*Se escucha el sonido del teléfono*</show-text>
         <condition />
       </effect>
     </dialogue-node>
@@ -702,7 +756,7 @@
       <condition />
       <child nodeindex="2" />
       <effect>
-        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">&lt;&lt;El portero cuelga el teléfono&gt;&gt;</show-text>
+        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">*El portero cuelga el teléfono*</show-text>
         <condition />
       </effect>
     </dialogue-node>
@@ -736,7 +790,7 @@
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <option-node nodeindex="4" keepShowing="yes" preListening="yes" editor-x="193" editor-y="1149" x="193" y="1149">
+    <option-node nodeindex="4" keepShowing="yes" preListening="yes" editor-x="86" editor-y="1069" x="86" y="1069">
       <speak-player>
         <text>¡Voy!</text>
         <resources name="No name" />
@@ -744,10 +798,10 @@
       <condition />
       <child nodeindex="5" />
     </option-node>
-    <dialogue-node nodeindex="5" editor-x="552" editor-y="1158">
+    <dialogue-node nodeindex="5" editor-x="969" editor-y="1094">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="MesasTrabajo" x="515" y="510" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="MesasTrabajo_1" x="515" y="510" transitionTime="1000" transitionType="1" />
           <condition />
         </effect>
       </end-conversation>
@@ -813,6 +867,10 @@
       <effect>
         <activate flag="JefeHablado" />
         <condition />
+        <trigger-scene idTarget="EscenaTransicionNegro" x="142" y="132" transitionTime="1000" transitionType="5" />
+        <condition />
+        <trigger-scene idTarget="MesasTrabajo_2" x="515" y="510" transitionTime="1000" transitionType="5" />
+        <condition />
       </effect>
     </option-node>
     <dialogue-node nodeindex="2" editor-x="696" editor-y="330">
@@ -845,7 +903,7 @@
         <condition />
       </effect>
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="88" editor-y="278" x="88" y="278">
+    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="10" editor-y="246" x="10" y="246">
       <speak-player>
         <text>Elegir grupo de Luis</text>
         <resources name="No name" />
@@ -853,24 +911,24 @@
       <condition />
       <child nodeindex="2" />
       <speak-player>
-        <text>Elegir grupo de Jason</text>
+        <text>Elegir grupo de Jonathan</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="615" editor-y="152">
+    <dialogue-node nodeindex="2" editor-x="499" editor-y="169">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeLuis" x="375" y="435" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="CafeLuis" x="375" y="435" transitionTime="1500" transitionType="3" />
           <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="592" editor-y="375">
+    <dialogue-node nodeindex="3" editor-x="540" editor-y="456">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeJason" x="325" y="337" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="CafeJony" x="325" y="337" transitionTime="1500" transitionType="4" />
           <condition />
         </effect>
       </end-conversation>
@@ -1082,12 +1140,12 @@
   </graph-conversation>
   <graph-conversation id="JonyConver">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Bueno, pues aquí estamos, estos son Jason y Diego</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Qué tal?</text>
       </speak-char>
@@ -1099,7 +1157,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" editor-x="324" editor-y="90" x="324" y="90">
+    <option-node nodeindex="1" preListening="yes" editor-x="324" editor-y="90" x="324" y="90">
       <speak-player>
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
@@ -1137,7 +1195,7 @@
         <text>Yo soy Diego, encantado</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Y yo Jason. Un placer</text>
       </speak-char>
@@ -1149,7 +1207,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" editor-x="323" editor-y="87" x="323" y="87">
+    <option-node nodeindex="1" preListening="yes" editor-x="323" editor-y="87" x="323" y="87">
       <speak-player>
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
@@ -1177,24 +1235,24 @@
   </graph-conversation>
   <graph-conversation id="JasonConver">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¡Vaya, qué sorpresa tan agradable!</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Hola guapa, déjame que me presente</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Soy Jason, y este de aquí es Diego</text>
       </speak-char>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" editor-x="285" editor-y="50" x="285" y="50">
+    <option-node nodeindex="1" preListening="yes" editor-x="285" editor-y="50" x="285" y="50">
       <speak-player>
         <text>Encantada, yo soy Alexis</text>
         <resources name="No name" />
@@ -1208,7 +1266,7 @@
       <condition />
       <child nodeindex="2" />
     </option-node>
-    <option-node nodeindex="2" editor-x="574" editor-y="92" x="574" y="92">
+    <option-node nodeindex="2" preListening="yes" editor-x="574" editor-y="92" x="574" y="92">
       <speak-player>
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
@@ -1234,58 +1292,252 @@
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
-  <graph-conversation id="InvitacionLuis">
+  <graph-conversation id="InvitacionLuis_1">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
       <speak-char idTarget="Luis">
         <resources name="No name" />
-        <text>Vente conmigo a la cafetería</text>
+        <text>Bueno, pues a currar</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Me lo pensaré</text>
+        <text>Sí, al lío</text>
       </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Si tienes cualquier duda, no dudes en preguntarme </text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Aunque me han dejado bastante claras mis tareas</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Siempre surge alguna duda al principio jaja </text>
+      </speak-char>
       <condition />
       <end-conversation>
         <effect>
-          <increment var="VariableParaBorrar" value="1" />
+          <increment var="ConverLuisJason" value="1" />
           <condition />
-          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="EscenaTransicionNegro" x="142" y="132" transitionTime="1000" transitionType="5" />
           <condition>
-            <greater-equals-than var="VariableParaBorrar" value="2" />
+            <equals var="ConverLuisJason" value="2" />
           </condition>
-          <trigger-conversation idTarget="PensamientoPrevioCafe" />
+          <trigger-scene idTarget="MesasTrabajo_2" x="515" y="510" transitionTime="1000" transitionType="5" />
           <condition>
-            <greater-equals-than var="VariableParaBorrar" value="2" />
+            <equals var="ConverLuisJason" value="2" />
+          </condition>
+          <activate flag="LuisPresentado" />
+          <condition />
+          <speak-player>*Ya han pasado 4 horas*</speak-player>
+          <condition>
+            <equals var="ConverLuisJason" value="2" />
           </condition>
         </effect>
       </end-conversation>
     </dialogue-node>
   </graph-conversation>
-  <graph-conversation id="InvitacionJason">
+  <graph-conversation id="InvitacionLuis_2">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-char idTarget="Jason">
+      <speak-player>
         <resources name="No name" />
-        <text>Véngase conmigo a la cafetería mi reina</text>
+        <text>Ya ves, que guapo eso, ¿cómo lo has hecho? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>¿No sabes hacer esto? Si es súper sencillo </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*¿Mi reina?* Eeh, tal vez, muy amable</text>
+        <text>A ver, no tengo por qué saberlo todo jajaja </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Ya ya, solo que esto… es trivial</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Bueno, pero me podrás enseñar, ¿no? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Sí, claro, pero más tarde</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Quiero acabar esta parte antes de bajar a la cafetería, que en unos 20 minutos bajaré a descansar</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Si quieres vente conmigo y así te enseño un poco el sitio</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale, bueno, luego te confirmo</text>
       </speak-player>
       <condition />
       <end-conversation>
         <effect>
-          <increment var="VariableParaBorrar" value="1" />
+          <increment var="ConverLuisJason" value="1" />
           <condition />
-          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="0" transitionType="0" />
+          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="2000" transitionType="5" />
           <condition>
-            <greater-equals-than var="VariableParaBorrar" value="2" />
+            <equals var="ConverLuisJason" value="4" />
           </condition>
           <trigger-conversation idTarget="PensamientoPrevioCafe" />
           <condition>
-            <greater-equals-than var="VariableParaBorrar" value="2" />
+            <equals var="ConverLuisJason" value="4" />
+            <inactive flag="Descanso" />
           </condition>
+          <activate flag="LuisInvitado" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="InvitacionJony_1">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>¿Qué tal vas? Yo soy Jonathan, puedes llamarme Jony</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Bien, bien. Yo soy Alexis</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Oye, ¿dónde está el baño?</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Por aquel pasillo, a la derecha. Ten cuidado y no te pierdas jajaja</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No creo jajaja</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Cierra bien la puerta al entrar, que a veces se queda abierta</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale, gracias</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Si necesitas papel háblame al Whats, toma mi número</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Siempre guardo un rollo aquí por si acaso</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Eeeh... Vale, gracias</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>*Que chico tan raro*</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <increment var="ConverLuisJason" value="1" />
+          <condition />
+          <trigger-scene idTarget="EscenaTransicionNegro" x="142" y="132" transitionTime="1000" transitionType="5" />
+          <condition>
+            <equals var="ConverLuisJason" value="2" />
+          </condition>
+          <trigger-scene idTarget="MesasTrabajo_2" x="515" y="510" transitionTime="1000" transitionType="5" />
+          <condition>
+            <equals var="ConverLuisJason" value="2" />
+          </condition>
+          <activate flag="JonyPresentado" />
+          <condition />
+          <speak-player>*Ya han pasado 4 horas*</speak-player>
+          <condition>
+            <equals var="ConverLuisJason" value="2" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="InvitacionJony_2">
+    <dialogue-node nodeindex="0" editor-x="52" editor-y="67">
+      <speak-player>
+        <resources name="No name" />
+        <text>Oye una pregunta, ¿a qué hora se hace el descanso? </text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Pues en no mucho. ¿Ya estás pensando en vaguear? Jajaja</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No, no es eso jajaja era por saber</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>No te preocupes, en una media hora podrás bajar a la cafetería</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Si quieres, vente conmigo y te enseño un poco el entorno</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Vale, bueno, después te confirmo </text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <increment var="ConverLuisJason" value="1" />
+          <condition />
+          <trigger-scene idTarget="Transicion_Mesas_Cafe" x="142" y="132" transitionTime="2000" transitionType="5" />
+          <condition>
+            <equals var="ConverLuisJason" value="4" />
+          </condition>
+          <trigger-conversation idTarget="PensamientoPrevioCafe" />
+          <condition>
+            <equals var="ConverLuisJason" value="4" />
+            <inactive flag="Descanso" />
+          </condition>
+          <activate flag="JonyInvitado" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2784,17 +3036,17 @@
         <text>Poquito a poco</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Si alguna vez necesitas ayuda, ya sabes dónde encontrarme. *guiño*</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>&lt;&lt;¿Me ha guiñado un ojo?&gt;&gt; Gracias</text>
+        <text>*¿Me ha guiñado un ojo?* Gracias</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¡Eh! Relaja, que acaba de llegar a la empresa</text>
       </speak-char>
@@ -2821,7 +3073,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" editor-x="319" editor-y="81" x="319" y="81">
+    <option-node nodeindex="1" preListening="yes" editor-x="319" editor-y="81" x="319" y="81">
       <speak-player>
         <text>*Decir algo*</text>
         <resources name="No name" />
@@ -2841,7 +3093,7 @@
         <text>¿Como Andrea? ¿Qué pasa, que ella también es rubia?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Jajaja. Guapa y graciosa. Me caes bien</text>
       </speak-char>
@@ -2851,12 +3103,12 @@
         <text>¿Gracias?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>De nada. *guiño*</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Lo que es, es una guarra</text>
       </speak-char>
@@ -2866,12 +3118,12 @@
         <text>Eh, que estás hablando de mi novia</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Pues parece que no lo sabe. Como este fin de semana, que se ha ido de viaje con sus “amigos”</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>No sé por qué tienes novia, si luego la dejas irse con cualquiera</text>
       </speak-char>
@@ -2879,7 +3131,7 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="324" editor-y="441">
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Pero de verdad sigues sufriendo por esa guarra?</text>
       </speak-char>
@@ -2889,7 +3141,7 @@
         <text>Buah, es que cada vez parece que le importo menos</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Y eso?</text>
       </speak-char>
@@ -2899,14 +3151,14 @@
         <text>Os acordáis de que se fue de viaje con sus amigos, ¿no?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Todavía no entiendo cómo la dejaste</text>
       </speak-char>
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" editor-x="864" editor-y="58" x="864" y="58">
+    <option-node nodeindex="4" preListening="yes" editor-x="864" editor-y="58" x="864" y="58">
       <speak-player>
         <text>*Qué bueno es, que le “deja” irse con sus amigos*</text>
         <resources name="No name" />
@@ -2920,7 +3172,7 @@
       <condition />
       <child nodeindex="6" />
     </option-node>
-    <option-node nodeindex="5" editor-x="577" editor-y="443" x="577" y="443">
+    <option-node nodeindex="5" preListening="yes" editor-x="577" editor-y="443" x="577" y="443">
       <speak-player>
         <text>*Interrumpir*</text>
         <resources name="No name" />
@@ -2945,12 +3197,12 @@
         <text>*Saca el móvil* Mira qué foto ha subido a Fotogram</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¡Pero si casi se le ve hasta el alma!</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text> Le queda muy bien ese bikini</text>
       </speak-char>
@@ -2968,7 +3220,7 @@
         <text>¿Dejarla? ¿Necesita su permiso para irse de viaje?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text> Es su novia, ¿no? Digo yo que estas cosas se deciden en pareja</text>
       </speak-char>
@@ -2988,7 +3240,7 @@
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <option-node nodeindex="9" editor-x="1190" editor-y="549" x="1190" y="549">
+    <option-node nodeindex="9" preListening="yes" editor-x="1190" editor-y="549" x="1190" y="549">
       <speak-player>
         <text>¿Es tóxica si no hace lo que tú quieres?</text>
         <resources name="No name" />
@@ -3002,7 +3254,7 @@
       <condition />
       <child nodeindex="12" />
     </option-node>
-    <option-node nodeindex="10" editor-x="2612" editor-y="280" x="2612" y="280">
+    <option-node nodeindex="10" preListening="yes" editor-x="2612" editor-y="280" x="2612" y="280">
       <speak-player>
         <text>*Defender a Andrea*</text>
         <resources name="No name" />
@@ -3017,7 +3269,7 @@
       <child nodeindex="14" />
     </option-node>
     <dialogue-node nodeindex="11" editor-x="1448" editor-y="446">
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>No es lo que él “quiera”. Se trata de lo que ella debería hacer</text>
       </speak-char>
@@ -3032,7 +3284,7 @@
         <text>¿Como por ejemplo...?</text>
       </speak-player>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Debería preguntarle a su novio si le parece bien que desaparezca todo el fin de semana</text>
       </speak-char>
@@ -3068,7 +3320,7 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="15" editor-x="1705" editor-y="567" x="1705" y="567">
+    <option-node nodeindex="15" preListening="yes" editor-x="1705" editor-y="567" x="1705" y="567">
       <speak-player>
         <text>¿Le vigilas su Fotogram?</text>
         <resources name="No name" />
@@ -3082,7 +3334,7 @@
       <condition />
       <child nodeindex="18" />
     </option-node>
-    <option-node nodeindex="16" keepShowing="yes" editor-x="3212" editor-y="249" x="3212" y="249">
+    <option-node nodeindex="16" keepShowing="yes" preListening="yes" editor-x="3212" editor-y="249" x="3212" y="249">
       <speak-player>
         <text>*Hablar sobre aficiones*</text>
         <resources name="No name" />
@@ -3097,12 +3349,12 @@
       <child nodeindex="20" />
     </option-node>
     <dialogue-node nodeindex="17" editor-x="1963" editor-y="477">
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Vigilar? Relaja, solo la sigue. Son pareja, tampoco es tan raro</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Debería confiar un poco más en ella, subir una foto en bikini no es para tanto</text>
       </speak-char>
@@ -3120,12 +3372,12 @@
       <child nodeindex="8" />
     </dialogue-node>
     <dialogue-node nodeindex="18" editor-x="1966" editor-y="749">
-      <speak-char idTarget="Jonathan">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Sí, ese bikini le queda muy bien. No veo el problema en que quiera enseñarlo</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>El problema es que tiene novio</text>
       </speak-char>
@@ -3153,4 +3405,24 @@
       </detailed>
     </description>
   </object>
+  <completable id="Contratada" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="EscenaComienzoJuego" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="Contratada" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM" />
+    <score type="COMPLETABLE" method="SINGLE" id="" />
+  </completable>
+  <completable id="NoContratada" repeatable="false" type="completable">
+    <start-milestone type="SCENE" targetId="EscenaComienzoJuego" />
+    <end-milestone type="CONDITION">
+      <condition>
+        <active flag="NoContratada" />
+      </condition>
+    </end-milestone>
+    <progress type="SUM" />
+    <score type="COMPLETABLE" method="SINGLE" id="NoContratada" />
+  </completable>
 </eAdventure>
