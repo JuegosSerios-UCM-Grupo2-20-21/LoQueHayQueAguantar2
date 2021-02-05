@@ -366,7 +366,7 @@
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <scene id="EntradaEdificio" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="EntradaEdificio" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -441,11 +441,7 @@
       <object-ref idTarget="MesaLuis" x="292" y="568" scale="1" layer="2" hasInfluenceArea="no" />
     </objects>
     <characters>
-      <character-ref idTarget="Balta" x="662" y="915" scale="0.6003119" orientation="2" layer="1" hasInfluenceArea="no">
-        <condition>
-          <inactive flag="JefeHablado" />
-        </condition>
-      </character-ref>
+      <character-ref idTarget="Balta" x="662" y="915" scale="0.6003119" orientation="2" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="Luis" x="330" y="678" scale="0.72" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
@@ -460,10 +456,11 @@
     <default-initial-position x="400" y="450" />
     <objects>
       <object-ref idTarget="MesaLuis" x="292" y="568" scale="1" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="MesaJony" x="774" y="570" scale="1" layer="3" hasInfluenceArea="no" />
     </objects>
     <characters>
       <character-ref idTarget="Luis" x="330" y="678" scale="0.72" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Jony" x="712" y="471" scale="0.2367462" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Jony" x="678" y="690" scale="0.1922915" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <scene id="Transicion_Mesas_Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -487,11 +484,11 @@
     <default-initial-position x="400" y="450" />
     <characters>
       <character-ref idTarget="Luis" x="334" y="842" scale="1.346705" orientation="2" layer="0" hasInfluenceArea="no" />
-      <character-ref idTarget="Anass" x="107" y="443" scale="0.3229835" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="Gloria" x="561" y="452" scale="0.3433943" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Anass" x="94" y="583" scale="0.2229025" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Gloria" x="559" y="483" scale="0.3021795" orientation="2" layer="2" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="LuisArea" rectangular="no" x="184" y="120" width="273" height="323" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="LuisArea" rectangular="no" x="191" y="120" width="256" height="353" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -508,21 +505,21 @@
             </effect>
           </use>
         </actions>
-        <point x="254" y="176" />
+        <point x="254" y="175" />
         <point x="262" y="125" />
-        <point x="334" y="120" />
+        <point x="333" y="120" />
         <point x="348" y="228" />
         <point x="432" y="277" />
-        <point x="457" y="333" />
-        <point x="406" y="443" />
-        <point x="255" y="438" />
-        <point x="229" y="369" />
-        <point x="184" y="352" />
+        <point x="447" y="322" />
+        <point x="434" y="446" />
+        <point x="223" y="473" />
+        <point x="191" y="442" />
+        <point x="213" y="329" />
         <point x="200" y="280" />
         <point x="234" y="259" />
         <point x="265" y="233" />
       </active-area>
-      <active-area id="GloriaArea" rectangular="no" x="418" y="150" width="249" height="308" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="GloriaArea" rectangular="no" x="451" y="118" width="223" height="328" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -539,17 +536,17 @@
             </effect>
           </use>
         </actions>
-        <point x="610" y="150" />
-        <point x="645" y="256" />
-        <point x="664" y="349" />
-        <point x="667" y="444" />
-        <point x="587" y="458" />
-        <point x="418" y="452" />
-        <point x="466" y="341" />
-        <point x="490" y="309" />
-        <point x="517" y="157" />
+        <point x="597" y="118" />
+        <point x="624" y="198" />
+        <point x="630" y="257" />
+        <point x="658" y="273" />
+        <point x="674" y="446" />
+        <point x="451" y="445" />
+        <point x="454" y="271" />
+        <point x="509" y="246" />
+        <point x="516" y="122" />
       </active-area>
-      <active-area id="AnassArea" rectangular="no" x="-13" y="168" width="256" height="285" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="AnassArea" rectangular="no" x="-24" y="128" width="223" height="323" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -566,20 +563,23 @@
             </effect>
           </use>
         </actions>
-        <point x="19" y="228" />
-        <point x="55" y="178" />
-        <point x="162" y="168" />
-        <point x="201" y="252" />
-        <point x="162" y="353" />
-        <point x="219" y="385" />
-        <point x="243" y="446" />
-        <point x="128" y="451" />
-        <point x="-13" y="453" />
-        <point x="6" y="360" />
+        <point x="-3" y="276" />
+        <point x="72" y="231" />
+        <point x="65" y="176" />
+        <point x="81" y="128" />
+        <point x="137" y="130" />
+        <point x="149" y="192" />
+        <point x="142" y="245" />
+        <point x="193" y="287" />
+        <point x="199" y="364" />
+        <point x="175" y="451" />
+        <point x="127" y="451" />
+        <point x="6" y="445" />
+        <point x="-24" y="355" />
       </active-area>
     </active-areas>
   </scene>
-  <scene id="CafeJony" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="CafeJony" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -589,20 +589,20 @@
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="Jason" x="106" y="453" scale="0.3288234" orientation="2" layer="2" hasInfluenceArea="no">
+      <character-ref idTarget="Jason" x="109" y="468" scale="0.1771553" orientation="2" layer="2" hasInfluenceArea="no">
         <condition>
           <inactive flag="JasonYDiegoIdos" />
         </condition>
       </character-ref>
-      <character-ref idTarget="Diego" x="562" y="451" scale="0.3662109" orientation="2" layer="1" hasInfluenceArea="no">
+      <character-ref idTarget="Diego" x="554" y="451" scale="0.1482944" orientation="2" layer="1" hasInfluenceArea="no">
         <condition>
           <inactive flag="JasonYDiegoIdos" />
         </condition>
       </character-ref>
-      <character-ref idTarget="Jony" x="340" y="453" scale="0.3176027" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="Jony" x="383" y="724" scale="0.2802089" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="JonyArea" rectangular="no" x="240" y="158" width="191" height="291" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="JonyArea" rectangular="no" x="258" y="160" width="180" height="291" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -619,22 +619,22 @@
             </effect>
           </use>
         </actions>
-        <point x="297" y="158" />
-        <point x="386" y="163" />
-        <point x="411" y="277" />
-        <point x="387" y="310" />
-        <point x="378" y="348" />
-        <point x="410" y="362" />
-        <point x="431" y="373" />
-        <point x="425" y="409" />
-        <point x="404" y="449" />
-        <point x="246" y="448" />
-        <point x="240" y="381" />
-        <point x="273" y="356" />
-        <point x="291" y="321" />
-        <point x="258" y="265" />
+        <point x="323" y="231" />
+        <point x="322" y="192" />
+        <point x="336" y="160" />
+        <point x="391" y="161" />
+        <point x="393" y="203" />
+        <point x="379" y="246" />
+        <point x="417" y="263" />
+        <point x="438" y="385" />
+        <point x="430" y="451" />
+        <point x="265" y="448" />
+        <point x="300" y="426" />
+        <point x="284" y="368" />
+        <point x="258" y="336" />
+        <point x="263" y="265" />
       </active-area>
-      <active-area id="JasonArea" rectangular="no" x="-32" y="183" width="269" height="283" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="JasonArea" rectangular="no" x="-67" y="153" width="358" height="298" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -651,22 +651,22 @@
             </effect>
           </use>
         </actions>
-        <point x="52" y="187" />
-        <point x="150" y="183" />
-        <point x="179" y="266" />
-        <point x="176" y="294" />
-        <point x="183" y="312" />
-        <point x="201" y="335" />
-        <point x="234" y="363" />
-        <point x="237" y="449" />
-        <point x="131" y="457" />
-        <point x="39" y="466" />
-        <point x="-32" y="460" />
-        <point x="-23" y="357" />
-        <point x="33" y="308" />
-        <point x="30" y="263" />
+        <point x="72" y="160" />
+        <point x="129" y="153" />
+        <point x="155" y="209" />
+        <point x="145" y="270" />
+        <point x="221" y="291" />
+        <point x="284" y="386" />
+        <point x="291" y="426" />
+        <point x="243" y="449" />
+        <point x="131" y="450" />
+        <point x="-67" y="451" />
+        <point x="-59" y="372" />
+        <point x="0" y="284" />
+        <point x="64" y="270" />
+        <point x="61" y="225" />
       </active-area>
-      <active-area id="DiegoArea" rectangular="no" x="417" y="161" width="273" height="288" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="DiegoArea" rectangular="no" x="443" y="142" width="221" height="308" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -683,13 +683,17 @@
             </effect>
           </use>
         </actions>
-        <point x="533" y="161" />
-        <point x="635" y="188" />
-        <point x="690" y="448" />
-        <point x="417" y="449" />
-        <point x="444" y="375" />
-        <point x="472" y="332" />
-        <point x="477" y="211" />
+        <point x="508" y="159" />
+        <point x="541" y="142" />
+        <point x="577" y="155" />
+        <point x="581" y="244" />
+        <point x="631" y="262" />
+        <point x="651" y="335" />
+        <point x="664" y="450" />
+        <point x="446" y="449" />
+        <point x="443" y="389" />
+        <point x="455" y="266" />
+        <point x="508" y="231" />
       </active-area>
     </active-areas>
   </scene>
@@ -722,7 +726,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*¿No se acuerda de mí? Casi que mejor, la verdad*</text>
+        <text>#O *¿No se acuerda de mí? Casi que mejor, la verdad*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -752,7 +756,7 @@
       <condition />
       <child nodeindex="1" />
       <effect>
-        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">*Se escucha el sonido del teléfono*</show-text>
+        <show-text x="500" y="300" frontColor="#D4B527FF" borderColor="#000000FF" uri="">*Se escucha el sonido del teléfono*</show-text>
         <condition />
       </effect>
     </dialogue-node>
@@ -774,7 +778,7 @@
       <condition />
       <child nodeindex="2" />
       <effect>
-        <show-text x="300" y="300" frontColor="#FFFFFFFF" borderColor="#000000FF" uri="">*El portero cuelga el teléfono*</show-text>
+        <show-text x="500" y="300" frontColor="#CABF29FF" borderColor="#000000FF" uri="">*El portero cuelga el teléfono*</show-text>
         <condition />
       </effect>
     </dialogue-node>
@@ -982,6 +986,11 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="2" editor-x="940" editor-y="191">
+      <speak-player>
+        <resources name="No name" />
+        <text>No me dijiste que iba a haber más gente</text>
+      </speak-player>
+      <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
         <text>Sí, lo siento. Pero seguro que te caen bien</text>
@@ -990,6 +999,11 @@
       <child nodeindex="4" />
     </dialogue-node>
     <dialogue-node nodeindex="3" editor-x="940" editor-y="382">
+      <speak-player>
+        <resources name="No name" />
+        <text>Buenas</text>
+      </speak-player>
+      <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
         <text>¿Qué tal?</text>
@@ -1005,12 +1019,12 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*A ver de qué hablamos ahora*</text>
+        <text>#O *A ver de qué hablamos ahora*</text>
       </speak-player>
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" keepShowing="yes" preListening="yes" editor-x="1756" editor-y="96" x="1756" y="96">
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1766" editor-y="68" x="1766" y="68">
       <speak-player>
         <text>*Hablar de vida personal*</text>
         <resources name="No name" />
@@ -1060,7 +1074,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*A ver de qué hablamos ahora*</text>
+        <text>#O *A ver de qué hablamos ahora*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -1079,7 +1093,7 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="515" editor-y="237">
+    <dialogue-node nodeindex="2" editor-x="683" editor-y="246">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisVida" />
@@ -1120,7 +1134,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text> *A ver ahora de qué hablamos*</text>
+        <text>#O  *A ver ahora de qué hablamos*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -1175,7 +1189,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*A ver de qué hablamos ahora*</text>
+        <text>#O *A ver de qué hablamos ahora*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -1235,7 +1249,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*A ver de qué hablamos ahora*</text>
+        <text>#O *A ver de qué hablamos ahora*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
@@ -1304,10 +1318,20 @@
       <condition />
       <child nodeindex="2" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="596" editor-y="132">
+    <dialogue-node nodeindex="2" editor-x="650" editor-y="451">
       <speak-player>
         <resources name="No name" />
-        <text>*A ver de qué hablamos ahora*</text>
+        <text>#O *¿Guapa?* </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Alexis, un placer</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O *A ver de qué hablamos ahora*</text>
       </speak-player>
       <condition />
       <child nodeindex="3" />
@@ -1517,7 +1541,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Que chico tan raro*</text>
+        <text>#O *Que chico tan raro*</text>
       </speak-player>
       <condition />
       <end-conversation>
@@ -1612,7 +1636,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="468" editor-y="50" x="468" y="50">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="492" editor-y="36" x="492" y="36">
       <speak-player>
         <text>Yo de momento bien. La verdad que tengo ganas de empezar a currar y demostrar mis aptitudes</text>
         <resources name="No name" />
@@ -1649,7 +1673,7 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>*Pone cara de pasa*</text>
+        <text>#O *Gloria pone cara de pasa*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Anass">
@@ -1681,7 +1705,7 @@
     <dialogue-node nodeindex="4" editor-x="1397" editor-y="462">
       <speak-player>
         <resources name="No name" />
-        <text>*Espero que no lo diga porque tenga que ser la mujer la que lo cuide.*</text>
+        <text>#O *Espero que no lo diga porque tenga que ser la mujer la que lo cuide.*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Gloria">
@@ -1736,7 +1760,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="2146" editor-y="462" x="2146" y="462">
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1983" editor-y="459" x="1983" y="459">
       <speak-player>
         <text>Si queréis apostar, no me viene mal ganar un dinerillo extra</text>
         <resources name="No name" />
@@ -1750,7 +1774,7 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="2665" editor-y="350">
+    <dialogue-node nodeindex="6" editor-x="2532" editor-y="323">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>Pues yo no creo que sea un tema para bromear</text>
@@ -1778,7 +1802,7 @@
       <condition />
       <child nodeindex="8" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="2654" editor-y="658">
+    <dialogue-node nodeindex="7" editor-x="2559" editor-y="649">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Dejadla ya, tener hijos oprime a las mujeres</text>
@@ -1808,7 +1832,7 @@
     </dialogue-node>
     <option-node nodeindex="8" random="yes" keepShowing="yes" preListening="yes" editor-x="3183" editor-y="350" x="3183" y="350">
       <speak-player>
-        <text>*Mmm mejor vamos a cambiar de tema*</text>
+        <text>*Será mejor vamos a cambiar de tema*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -1823,12 +1847,17 @@
     <dialogue-node nodeindex="9" editor-x="3750" editor-y="359">
       <speak-player>
         <resources name="No name" />
-        <text>Bueno, mejor cambiemos de tema, seguro que hay cosas más interesantes de las que hablar</text>
+        <text>Bueno, mejor cambiemos de tema</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Seguro que hay cosas más interesantes de las que hablar</text>
       </speak-player>
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
-    <dialogue-node nodeindex="10" editor-x="3305" editor-y="984">
+    <dialogue-node nodeindex="10" editor-x="3238" editor-y="718">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Yo la verdad que apoyo mucho a las mujeres que trabajan y tienen hijos</text>
@@ -1856,7 +1885,7 @@
       <condition />
       <child nodeindex="12" />
     </dialogue-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="3441" editor-y="658" x="3441" y="658">
+    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="4270" editor-y="392" x="4270" y="392">
       <speak-player>
         <text>*Hablar de educación*</text>
         <resources name="No name" />
@@ -1870,7 +1899,7 @@
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <option-node nodeindex="12" random="yes" preListening="yes" editor-x="4127" editor-y="1062" x="4127" y="1062">
+    <option-node nodeindex="12" random="yes" preListening="yes" editor-x="3672" editor-y="822" x="3672" y="822">
       <speak-player>
         <text>*Opinar*</text>
         <resources name="No name" />
@@ -1884,7 +1913,7 @@
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <dialogue-node nodeindex="13" editor-x="3719" editor-y="690">
+    <dialogue-node nodeindex="13" editor-x="4681" editor-y="225">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisEstudios" />
@@ -1892,7 +1921,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="3723" editor-y="898">
+    <dialogue-node nodeindex="14" editor-x="4683" editor-y="432">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisTrabajo" />
@@ -1900,7 +1929,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="15" editor-x="4563" editor-y="1214">
+    <dialogue-node nodeindex="15" editor-x="4007" editor-y="1121">
       <speak-player>
         <resources name="No name" />
         <text>Decir "ayudar" no creo que ayude a que la sociedad avance</text>
@@ -1938,7 +1967,7 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="4755" editor-y="876" x="4755" y="876">
+    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="4300" editor-y="750" x="4300" y="750">
       <speak-player>
         <text>*Que poquito voy a durar en este grupo...*</text>
         <resources name="No name" />
@@ -1993,7 +2022,12 @@
     <dialogue-node nodeindex="3" editor-x="650" editor-y="594">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Que buena mujer jajaja hay que cuidar a nuestros hombres, que si no nos los quitan</text>
+        <text>Que buena mujer jajaja</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Hay que cuidar a nuestros hombres, que si no nos los quitan</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Anass">
@@ -2017,7 +2051,7 @@
       <condition />
       <child nodeindex="6" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1254" editor-y="594" x="1254" y="594">
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1134" editor-y="586" x="1134" y="586">
       <speak-player>
         <text>*¿Que le cuide? quién se cree que es*</text>
         <resources name="No name" />
@@ -2037,7 +2071,7 @@
       <condition />
       <child nodeindex="8" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="2009" editor-y="100">
+    <dialogue-node nodeindex="6" editor-x="1649" editor-y="119">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Bueno, mientras llegues pronto a casa no pasará nada</text>
@@ -2050,17 +2084,32 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Yo no me separo de mi hombre en ningún momento, a ver si me van a violar o algo</text>
+        <text>Yo no me separo de mi hombre en ningún momento</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>A ver si me van a violar o algo</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
-        <text>A ver, tampoco es para ponerse así, seguro que Alexis sabe cuidarse sola</text>
+        <text>A ver, tampoco es para ponerse así</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Seguro que Alexis sabe cuidarse sola</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text>Sí, seguramente, pero aún así, a veces ir con algún amigo o tu pareja aporta seguridad</text>
+        <text>Sí, seguramente, pero aún así...</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>A veces ir con algún amigo o tu pareja aporta seguridad</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Anass">
@@ -2080,12 +2129,17 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>o es bueno que una mujer ande sola por ahí, sobre todo alguien joven y guapa como Alexis</text>
+        <text>No es bueno que una mujer ande sola por ahí</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Sobre todo alguien joven y guapa como Alexis</text>
       </speak-char>
       <condition />
       <child nodeindex="9" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1927" editor-y="644">
+    <dialogue-node nodeindex="7" editor-x="1866" editor-y="583">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>Pues nosotros llevaremos al crío al parque o algo, tal vez al cine</text>
@@ -2133,12 +2187,17 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>que llegase un príncipe azul y salvase a la princesa y acabar felices y comiendo perdices</text>
+        <text>Un príncipe azul que rescata a la princesa</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Y acaban felices y comiendo perdices</text>
       </speak-char>
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1730" editor-y="1007">
+    <dialogue-node nodeindex="8" editor-x="1523" editor-y="1013">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Bueno, no exageres jajaja no decía eso tampoco, sería mutuo</text>
@@ -2151,7 +2210,17 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Además que no hay nada como ver la cara de mi chico cuando le llevo la comida a la mesa y me lo pague con una sonrisa</text>
+        <text>Además...</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>No hay nada como ver la cara de mi chico cuando le llevo la comida a la mesa </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Siempre me lo paga con una sonrisa</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -2161,40 +2230,40 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Lo que hay que aguantar*</text>
+        <text>#O *Lo que hay que aguantar*</text>
       </speak-player>
       <condition />
       <child nodeindex="7" />
     </dialogue-node>
-    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="2439" editor-y="108" x="2439" y="108">
-      <speak-player>
-        <text>Ya bueno... ¿Y vosostros que vais a hacer?</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="7" />
+    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="2236" editor-y="143" x="2236" y="143">
       <speak-player>
         <text>Sinceramente, no creo que me pase nada...</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="11" />
-    </option-node>
-    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2505" editor-y="667" x="2505" y="667">
       <speak-player>
-        <text>¿Tan forzado os parece que una mujer sea independiente?</text>
+        <text>Ya bueno... ¿Y vosostros que vais a hacer?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="12" />
+      <child nodeindex="7" />
+    </option-node>
+    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2556" editor-y="624" x="2556" y="624">
       <speak-player>
         <text>*Creo que mejor no me esfuerzo con esta gente*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
+      <child nodeindex="12" />
+      <speak-player>
+        <text>¿Tan forzado os parece que una mujer sea independiente?</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
       <child nodeindex="13" />
     </option-node>
-    <dialogue-node nodeindex="11" editor-x="2959" editor-y="318">
+    <dialogue-node nodeindex="11" editor-x="2690" editor-y="124">
       <speak-player>
         <resources name="No name" />
         <text>Llevo saliendo por ahí con mis amigas desde que tenía 16</text>
@@ -2222,12 +2291,25 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Pff a mí la verdad que no me gusta tanto jugar, seguro que Alexis me entiende</text>
+        <text>Pff a mí la verdad que no me gusta tanto jugar</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Seguro que Alexis me entiende</text>
       </speak-char>
       <condition />
       <child nodeindex="14" />
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="2880" editor-y="1099">
+    <dialogue-node nodeindex="12" editor-x="3376" editor-y="724">
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Vamos a hablar de otra cosa</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="15" />
+    </dialogue-node>
+    <dialogue-node nodeindex="13" editor-x="2516" editor-y="1019">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text> A ver, a mí las mujeres independientes me encantan</text>
@@ -2235,8 +2317,18 @@
       <condition />
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text>Solo digo que en las películas y series de ahora quieren enviar mensajes forzados sobre el feminismo y sobre la mujer</text>
+        <text>Solo digo que en las películas y series de ahora...</text>
       </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>No sé...</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Envían mensajes forzados sobre el Feminismo y sobre la mujer</text>
+      </speak-player>
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
@@ -2245,7 +2337,7 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>yo destaco sobre todo que parece que quieren que la mujer no se case ni tenga hijos</text>
+        <text>Yo destaco sobre todo que parece que quieren que la mujer no se case ni tenga hijos</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -2260,20 +2352,12 @@
       <condition />
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text>No sé, creo que fuerzan mucho los guiones para que la protagonista sea una chica</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="15" />
-    </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="3513" editor-y="781">
-      <speak-char idTarget="Luis">
-        <resources name="No name" />
-        <text>Vamos a hablar de otra cosa</text>
+        <text>Creo que fuerzan mucho los guiones para que la protagonista sea una chica</text>
       </speak-char>
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="14" random="yes" keepShowing="yes" preListening="yes" editor-x="3430" editor-y="318" x="3430" y="318">
+    <option-node nodeindex="14" random="yes" keepShowing="yes" preListening="yes" editor-x="3264" editor-y="213" x="3264" y="213">
       <speak-player>
         <text>Eeh, no sé por qué lo dices, pero a mí me encantan los videojuegos</text>
         <resources name="No name" />
@@ -2287,35 +2371,35 @@
       <condition />
       <child nodeindex="17" />
     </option-node>
-    <option-node nodeindex="15" random="yes" keepShowing="yes" preListening="yes" editor-x="3364" editor-y="1129" x="3364" y="1129">
-      <speak-player>
-        <text>Para nada es forzado…</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="18" />
-      <speak-player>
-        <text>Bueno, quizás tengas parte de razón...</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="13" />
-    </option-node>
-    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="4216" editor-y="722" x="4216" y="722">
+    <option-node nodeindex="15" random="yes" keepShowing="yes" preListening="yes" editor-x="4216" editor-y="722" x="4216" y="722">
       <speak-player>
         <text>*Hablar de educación*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="19" />
+      <child nodeindex="18" />
       <speak-player>
         <text>*Hablar de trabajo*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
+      <child nodeindex="19" />
+    </option-node>
+    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="3006" editor-y="1107" x="3006" y="1107">
+      <speak-player>
+        <text>Bueno, quizás tengas parte de razón...</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="12" />
+      <speak-player>
+        <text>Para nada es forzado…</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
       <child nodeindex="20" />
     </option-node>
-    <dialogue-node nodeindex="17" editor-x="4034" editor-y="318">
+    <dialogue-node nodeindex="17" editor-x="3843" editor-y="260">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>Por qué iba a ser, mujer</text>
@@ -2333,7 +2417,12 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Completamente, a mí me encanta jugar en mis ratos libres, ser mujer u hombre no determina nada</text>
+        <text>Completamente, a mí me encanta jugar en mis ratos libres</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Ser mujer u hombre no determina nada</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Anass">
@@ -2348,25 +2437,7 @@
       <condition />
       <child nodeindex="21" />
     </dialogue-node>
-    <dialogue-node nodeindex="18" editor-x="4111" editor-y="1135">
-      <speak-player>
-        <resources name="No name" />
-        <text>Simplemente hay papeles que encajan con la película y otros que no</text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>Pero en ningún caso habría que pensar en que el hombre o la mujer deben hacer ciertas cosas solo por su sexo</text>
-      </speak-player>
-      <condition />
-      <speak-char idTarget="Luis">
-        <resources name="No name" />
-        <text>¿Por qué no cambiamos de tema?</text>
-      </speak-char>
-      <condition />
-      <child nodeindex="16" />
-    </dialogue-node>
-    <dialogue-node nodeindex="19" editor-x="4572" editor-y="790">
+    <dialogue-node nodeindex="18" editor-x="4572" editor-y="790">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisEstudios" />
@@ -2374,7 +2445,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="20" editor-x="4570" editor-y="1031">
+    <dialogue-node nodeindex="19" editor-x="4570" editor-y="1031">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisTrabajo" />
@@ -2382,7 +2453,45 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="21" random="yes" keepShowing="yes" preListening="yes" editor-x="4579" editor-y="318" x="4579" y="318">
+    <dialogue-node nodeindex="20" editor-x="3603" editor-y="1060">
+      <speak-player>
+        <resources name="No name" />
+        <text>Simplemente hay papeles que encajan con la película y otros que no</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Pero no habría que pensar que el hombre o la mujer deben hacer ciertas cosas solo por su sexo</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Si una persona está cualificada para hacer algo</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Y quiere hacerlo</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>No debería haber problemas</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Tienes razón, pero bueno, hablemos de otra cosa</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Por mí guay</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="15" />
+    </dialogue-node>
+    <option-node nodeindex="21" random="yes" keepShowing="yes" preListening="yes" editor-x="4376" editor-y="316" x="4376" y="316">
       <speak-player>
         <text>Eso es por la opresión que ha sufrido la mujer estos últimos siglos, básicamente</text>
         <resources name="No name" />
@@ -2439,10 +2548,15 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text> Tienes una idea muy rara del Feminismo, pero bueno, mejor hablemos de otra cosa</text>
+        <text>Tienes una idea muy rara del Feminismo, pero bueno...</text>
       </speak-player>
       <condition />
-      <child nodeindex="16" />
+      <speak-player>
+        <resources name="No name" />
+        <text>Mejor hablemos de otra cosa</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="15" />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConverGrupoLuisTrabajo">
@@ -2464,7 +2578,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="0" editor-y="271" x="0" y="271">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="50" editor-y="247" x="50" y="247">
       <speak-player>
         <text>A mí no me importaría, pero tampoco creo que llegue la ocasión. </text>
         <resources name="No name" />
@@ -2478,7 +2592,7 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="324" editor-y="537">
+    <dialogue-node nodeindex="2" editor-x="397" editor-y="290">
       <speak-char idTarget="Luis">
         <resources name="No name" />
         <text>Eres toda una optimista, ¿eh?</text>
@@ -2491,17 +2605,32 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Bueno, a veces parece más importante ser un hombre que ser una crack, así que lo veo complicado</text>
+        <text>Bueno, a veces parece más importante ser un hombre que ser una crack</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Así que lo veo complicado</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>*Pone cara de pasa*</text>
+        <text>#O *Gloria pone cara de pasa*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Sí, claro. ¿Entonces por qué estamos aquí? Porque yo tengo clarísimo que soy mujer de los pies a la cabeza</text>
+        <text>Sí, claro. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>¿Entonces por qué estamos aquí? </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Porque yo tengo clarísimo que soy mujer de los pies a la cabeza</text>
       </speak-char>
       <condition />
       <child nodeindex="4" />
@@ -2509,7 +2638,12 @@
     <dialogue-node nodeindex="3" editor-x="71" editor-y="894">
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text>Y lo es. Pero, ¿no preferirías llegar a algo más importante? </text>
+        <text>Y lo es</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>Pero, ¿no preferirías llegar a algo más importante? </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -2519,7 +2653,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="4" editor-x="931" editor-y="505">
+    <dialogue-node nodeindex="4" editor-x="792" editor-y="261">
       <speak-player>
         <resources name="No name" />
         <text>No sé muy bien ni qué decir jaja</text>
@@ -2527,46 +2661,66 @@
       <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
-        <text>Sí, mejor será que cambiemos de tema. ¿Qué te está pareciendo tu puesto?</text>
+        <text>Sí, mejor será que cambiemos de tema. </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
-        <text>Espero que te guste el proyecto que te he asignado. Es bastante sencillo, pero es interesante, ¿no crees? </text>
+        <text>¿Qué te está pareciendo tu puesto?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Espero que te guste el proyecto que te he asignado. </text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text>Es bastante sencillo, pero es interesante, ¿no crees? </text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Desde luego. No esperaba empezar con un proyecto tan potente. Espero estar a la altura. </text>
+        <text>Desde luego</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Parece oírse la televisión de fondo...*</text>
+        <text>No esperaba empezar con un proyecto tan potente</text>
       </speak-player>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>"Televisión:  … con un mayor porcentaje de mujeres en altos cargos son más rentables. Según los estudios..."</text>
+        <text>Espero estar a la altura</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O *Parece oírse la televisión de fondo...*</text>
       </speak-player>
       <condition />
       <child nodeindex="6" />
+      <effect>
+        <show-text x="150" y="400" frontColor="#C8B328FF" borderColor="#000000FF" uri="">"Televisión:  … con un mayor porcentaje de mujeres
+ en altos cargos son más rentables. Según los estudios..."</show-text>
+        <condition />
+      </effect>
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="463" editor-y="894" x="463" y="894">
-      <speak-player>
-        <text>Jaja, claro, pero la idea de ser mentora no suena mal. </text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="7" />
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="403" editor-y="834" x="403" y="834">
       <speak-player>
         <text>Claro, pero hay que ser realista.  </text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
+      <speak-player>
+        <text>Jaja, claro, pero la idea de ser mentora no suena mal. </text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1420" editor-y="508" x="1420" y="508">
+    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1300" editor-y="598" x="1300" y="598">
       <speak-player>
         <text>*Ignorar la noticia*</text>
         <resources name="No name" />
@@ -2580,7 +2734,7 @@
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <dialogue-node nodeindex="7" editor-x="1035" editor-y="894">
+    <dialogue-node nodeindex="7" editor-x="838" editor-y="922">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Vaya. Me he llevado una impresión equivocada de ti entonces.</text>
@@ -2613,7 +2767,17 @@
       <condition />
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text>Tampoco es eso. A ver, está en una empresa de informática, que ya es algo. Pero no sé, me esperaba algo más. </text>
+        <text>Tampoco es eso</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>A ver, está en una empresa de informática, que ya es algo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>Pero no sé, me esperaba algo más. </text>
       </speak-char>
       <condition />
       <child nodeindex="4" />
@@ -2626,12 +2790,17 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Ehh, sí. *Voy a intentar pasar, no quiero seguir discutiendo sobre este tema*</text>
+        <text>Ehh, sí</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O *Voy a intentar pasar, no quiero seguir discutiendo sobre este tema*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text> *Pone cara de apio rancio*</text>
+        <text>#O  *Pone cara de apio rancio*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Gloria">
@@ -2641,12 +2810,17 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text> *Y yo tengo que aguantar esos comentarios, Gloria. Cada uno tiene lo suyo*</text>
+        <text>#O  *Y yo tengo que aguantar esos comentarios, Gloria. Cada uno tiene lo suyo*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
-        <text>La verdad es que en nuestra empresa, sois pocas mujeres. Más os vale dar una buena imagen</text>
+        <text>La verdad es que en nuestra empresa, sois pocas mujeres</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Luis">
+        <resources name="No name" />
+        <text> Más os vale dar una buena imagen</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Gloria">
@@ -2661,7 +2835,7 @@
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="9" editor-x="1861" editor-y="699">
+    <dialogue-node nodeindex="9" editor-x="1680" editor-y="706">
       <speak-player>
         <resources name="No name" />
         <text>Qué interesante</text>
@@ -2679,7 +2853,7 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>*Pone cara de limón*</text>
+        <text>#O *Pone cara de limón*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Gloria">
@@ -2704,21 +2878,21 @@
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
-    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2432" editor-y="301" x="2432" y="301">
-      <speak-player>
-        <text>*Qué diablos. Si ya ha salido la conversación, voy a dar mi opinión*</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="12" />
+    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2457" editor-y="177" x="2457" y="177">
       <speak-player>
         <text>*No creo que a Gloria o a Anass les guste lo que quiero decir. Mejor me callo*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
+      <child nodeindex="12" />
+      <speak-player>
+        <text>*Qué diablos. Si ya ha salido la conversación, voy a dar mi opinión*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
       <child nodeindex="13" />
     </option-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="2306" editor-y="699" x="2306" y="699">
+    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="2125" editor-y="759" x="2125" y="759">
       <speak-player>
         <text>No lo puedes estar diciendo en serio</text>
         <resources name="No name" />
@@ -2732,15 +2906,7 @@
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <dialogue-node nodeindex="12" editor-x="2910" editor-y="387">
-      <speak-player>
-        <resources name="No name" />
-        <text>¿Llamas “tonterías” a la igualdad de oportunidades?</text>
-      </speak-player>
-      <condition />
-      <child nodeindex="14" />
-    </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="2983" editor-y="59">
+    <dialogue-node nodeindex="12" editor-x="2983" editor-y="59">
       <speak-char idTarget="Luis">
         <resources name="No name" />
         <text>¿Pero no habíamos dejado de hablar de esto hace un rato?</text>
@@ -2748,16 +2914,39 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Sí, y además el descanso está a punto de acabarse. Será mejor que vayamos volviendo.</text>
+        <text>Sí, y además el descanso está a punto de acabarse</text>
       </speak-player>
       <condition />
-      <end-conversation />
+      <speak-player>
+        <resources name="No name" />
+        <text>Será mejor que vayamos volviendo.</text>
+      </speak-player>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="2930" editor-y="609">
+    <dialogue-node nodeindex="13" editor-x="2882" editor-y="382">
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Llamas “tonterías” a la igualdad de oportunidades?</text>
+      </speak-player>
+      <condition />
+      <child nodeindex="14" />
+    </dialogue-node>
+    <dialogue-node nodeindex="14" editor-x="2668" editor-y="703">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Claro que sí. Coger a gente menos formada por ser mujeres no me parece correcto</text>
+        <text>Claro que sí.</text>
       </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Coger a gente menos formada por ser mujeres no me parece correcto</text>
+      </speak-player>
       <condition />
       <speak-char idTarget="Luis">
         <resources name="No name" />
@@ -2776,7 +2965,12 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Si las mujeres somos el 50% de la población, deberíamos ser más o menos el mismo porcentaje de altos cargos, ¿no?</text>
+        <text>Si las mujeres somos el 50% de la población... </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Deberíamos ser más o menos el mismo porcentaje de altos cargos, ¿no?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Gloria">
@@ -2786,7 +2980,12 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Se las está metiendo a presión y luego se van, y mientras hay hombres que han perdido la oportunidad</text>
+        <text>Se las está metiendo a presión y luego se van</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Mientras hay hombres que han perdido la oportunidad</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -2846,12 +3045,15 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConverGrupoLuisEstudios">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
-      <speak-player>
-        <resources name="No name" />
-        <text>"Televisión: ...noche a las 22:00h documental sobre Ada Lovelace..."</text>
-      </speak-player>
-      <condition />
+    <dialogue-node nodeindex="0" editor-x="14" editor-y="3">
+      <child nodeindex="1" />
+      <effect>
+        <show-text x="150" y="400" frontColor="#C5B724FF" borderColor="#000000FF" uri="">"Televisión: ...noche a las 22:00h documental
+ sobre Ada Lovelace..."</show-text>
+        <condition />
+      </effect>
+    </dialogue-node>
+    <dialogue-node nodeindex="1" editor-x="231" editor-y="25">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>¿Lo habéis oído?</text>
@@ -2872,23 +3074,23 @@
         <text>Jajaja, idiota, digo la tele</text>
       </speak-char>
       <condition />
-      <child nodeindex="1" />
+      <child nodeindex="2" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="318" editor-y="53" x="318" y="53">
+    <option-node nodeindex="2" random="yes" keepShowing="yes" preListening="yes" editor-x="492" editor-y="65" x="492" y="65">
       <speak-player>
         <text>Sí, un documental sobre Lovelace esta noche, pensaba verlo</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="2" />
+      <child nodeindex="3" />
       <speak-player>
         <text>No, ¿qué ha dicho?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="3" />
+      <child nodeindex="4" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="576" editor-y="38">
+    <dialogue-node nodeindex="3" editor-x="756" editor-y="38">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>¿Lovelace?, ¿quién es ese?</text>
@@ -2904,12 +3106,17 @@
         <text>¿Qué era? ¿Actriz?, ¿cantante?, no me suena</text>
       </speak-char>
       <condition />
-      <child nodeindex="4" />
+      <child nodeindex="5" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="77" editor-y="396">
+    <dialogue-node nodeindex="4" editor-x="53" editor-y="552">
       <speak-char idTarget="Anass">
         <resources name="No name" />
-        <text> Luego dicen que no se reconocen los méritos de mujeres científicas, pues hoy dan un documental sobre una mujer científica en la tele</text>
+        <text> Luego dicen que no se reconocen los méritos de mujeres científicas</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Anass">
+        <resources name="No name" />
+        <text>Pues hoy dan un documental sobre una mujer científica en la tele</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -2922,37 +3129,37 @@
         <text>Ada Lovelace o algo así</text>
       </speak-char>
       <condition />
-      <child nodeindex="5" />
+      <child nodeindex="6" />
     </dialogue-node>
-    <option-node nodeindex="4" keepShowing="yes" preListening="yes" editor-x="835" editor-y="6" x="835" y="6">
+    <option-node nodeindex="5" keepShowing="yes" preListening="yes" editor-x="1076" editor-y="10" x="1076" y="10">
       <speak-player>
         <text>Es la madre de la programación, tú, al menos, que te dedicas a ello, deberías saberlo</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="6" />
+      <child nodeindex="7" />
       <speak-player>
         <text>Increíble, no por ti, por la cultura en general, seguro que todos en esta sala saben quién es Alan Turing, y casi ninguno sabrá de la existencia de Ada</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="7" />
+      <child nodeindex="8" />
     </option-node>
-    <option-node nodeindex="5" keepShowing="yes" preListening="yes" editor-x="339" editor-y="396" x="339" y="396">
+    <option-node nodeindex="6" keepShowing="yes" preListening="yes" editor-x="443" editor-y="565" x="443" y="565">
       <speak-player>
         <text>Que se hayan reconocido algunas no significa que otras muchas no hayan sido tapadas por nombres masculinos, o ignoradas por ser mujer</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="8" />
+      <child nodeindex="9" />
       <speak-player>
         <text>Y muchísimas más que hay, pero nunca se estudian en las escuelas</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="8" />
+      <child nodeindex="9" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="1102" editor-y="26">
+    <dialogue-node nodeindex="7" editor-x="1313" editor-y="23">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>Pues no entiendo porqué debería saberlo…</text>
@@ -2960,7 +3167,17 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Aunque fuese un hombre seguro que no sabría de quién hablas, yo vivo el presente, qué más me da el nombre de quien inventó o descubrió la programación</text>
+        <text>Aunque fuese un hombre seguro que no sabría de quién hablas</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Yo vivo el presente</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Qué más me da el nombre de quien inventó o descubrió la programación</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Anass">
@@ -2973,9 +3190,9 @@
         <text>Sí bueno, una cultura mínima sí, pero tanto nivel me parece absurdo exigirlo</text>
       </speak-char>
       <condition />
-      <child nodeindex="9" />
+      <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="859" editor-y="285">
+    <dialogue-node nodeindex="8" editor-x="1043" editor-y="302">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Imagino que no se sabrá tanto de ella porque no tendrán tanto mérito sus descubrimientos</text>
@@ -2986,9 +3203,9 @@
         <text>O porque no se da mérito a lo que hizo por ser mujer</text>
       </speak-char>
       <condition />
-      <child nodeindex="8" />
+      <child nodeindex="9" />
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="620" editor-y="484">
+    <dialogue-node nodeindex="9" editor-x="751" editor-y="555">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>No creo que sea así, antes las mujeres no tenían tantos estudios</text>
@@ -2996,7 +3213,12 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>Si a lo mejor había una mujer de cada mil hombres científicos, normal que no haya muchas para estudiarlas</text>
+        <text>Si a lo mejor había una mujer de cada mil hombres científicos</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Gloria">
+        <resources name="No name" />
+        <text>Normal que no haya muchas para estudiarlas</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -3009,9 +3231,9 @@
         <text>Sí, pero eso era antes, ahora ya no hay machismo</text>
       </speak-char>
       <condition />
-      <child nodeindex="10" />
+      <child nodeindex="11" />
     </dialogue-node>
-    <dialogue-node nodeindex="9" editor-x="1431" editor-y="151">
+    <dialogue-node nodeindex="10" editor-x="1923" editor-y="309">
       <speak-player>
         <resources name="No name" />
         <text>En fin…</text>
@@ -3119,7 +3341,7 @@
       <condition />
       <speak-char idTarget="Gloria">
         <resources name="No name" />
-        <text>*Gloria resopla*</text>
+        <text>#O *Gloria resopla*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Luis">
@@ -3149,29 +3371,29 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="10" keepShowing="yes" preListening="yes" editor-x="891" editor-y="528" x="891" y="528">
+    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="1094" editor-y="699" x="1094" y="699">
       <speak-player>
         <text>Nooo, para nada, por eso ahora que se conoce la existencia de tantos personajes históricos femeninos, se estudian tanto en las escuelas y todo el mundo sabe de ellas. Es ironía</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="11" />
+      <child nodeindex="12" />
       <speak-player>
         <text>¿Cómo que no hay tantas? Ves, y luego dices que no hay machismo, tu desconocimiento e incultura al respecto por parte del sistema y la sociedad es puro machismo</text>
         <resources name="No name" />
       </speak-player>
       <condition />
-      <child nodeindex="12" />
+      <child nodeindex="13" />
     </option-node>
-    <dialogue-node nodeindex="11" editor-x="1128" editor-y="344">
+    <dialogue-node nodeindex="12" editor-x="1438" editor-y="389">
       <speak-char idTarget="Anass">
         <resources name="No name" />
         <text>Me parece que exageras un poco, no creo que sea para tanto ni que pase tanto como dices</text>
       </speak-char>
       <condition />
-      <child nodeindex="9" />
+      <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="1153" editor-y="559">
+    <dialogue-node nodeindex="13" editor-x="1572" editor-y="622">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>¿Me estás llamando inculta?</text>
@@ -3182,7 +3404,7 @@
         <text>Además, creo que las feministas veis cosas donde no las hay...</text>
       </speak-char>
       <condition />
-      <child nodeindex="9" />
+      <child nodeindex="10" />
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="ConverGrupoJonyVida">
@@ -3199,12 +3421,12 @@
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Si alguna vez necesitas ayuda, ya sabes dónde encontrarme. *guiño*</text>
+        <text>Si alguna vez necesitas ayuda, ya sabes dónde encontrarme.</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*¿Me ha guiñado un ojo?* Gracias</text>
+        <text>Gracias</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Jony">
@@ -3219,7 +3441,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text> *¿Hola? ¿Por qué hablan de mí como si no estuviera?*</text>
+        <text>#O  *¿Hola? ¿Por qué hablan de mí como si no estuviera?*</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Diego">
@@ -3229,12 +3451,12 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>&lt;&lt;¿¿Hola?? ¿¿Sigo aquí??&gt;&gt;</text>
+        <text>#O *¿¿Hola?? ¿¿Sigo aquí??*</text>
       </speak-player>
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="353" editor-y="2" x="353" y="2">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="304" editor-y="28" x="304" y="28">
       <speak-player>
         <text>*Decir algo*</text>
         <resources name="No name" />
@@ -3266,7 +3488,12 @@
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>De nada. *guiño*</text>
+        <text>De nada</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>#O  *Jason guiña el ojo*</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jony">
@@ -3281,7 +3508,12 @@
       <condition />
       <speak-char idTarget="Jony">
         <resources name="No name" />
-        <text>Pues parece que no lo sabe. Como este fin de semana, que se ha ido de viaje con sus “amigos”</text>
+        <text>Pues parece que no lo sabe</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Como este fin de semana, que se ha ido de viaje con sus “amigos”</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jony">
@@ -3291,7 +3523,7 @@
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="324" editor-y="441">
+    <dialogue-node nodeindex="3" editor-x="289" editor-y="516">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Pero de verdad sigues sufriendo por esa guarra?</text>
@@ -3319,7 +3551,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" preListening="yes" editor-x="864" editor-y="58" x="864" y="58">
+    <option-node nodeindex="4" random="yes" preListening="yes" editor-x="985" editor-y="19" x="985" y="19">
       <speak-player>
         <text>*Qué bueno es, que le “deja” irse con sus amigos*</text>
         <resources name="No name" />
@@ -3333,21 +3565,21 @@
       <condition />
       <child nodeindex="6" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="577" editor-y="443" x="577" y="443">
-      <speak-player>
-        <text>*Interrumpir*</text>
-        <resources name="No name" />
-      </speak-player>
-      <condition />
-      <child nodeindex="7" />
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="558" editor-y="552" x="558" y="552">
       <speak-player>
         <text>*Seguir esperando a ver qué más dicen*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="6" />
+      <speak-player>
+        <text>*Interrumpir*</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="7" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="1359" editor-y="56">
+    <dialogue-node nodeindex="6" editor-x="1511" editor-y="32">
       <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>Porque confío en ella. Pero mira esto</text>
@@ -3355,12 +3587,17 @@
       <condition />
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>*Saca el móvil* Mira qué foto ha subido a Fotogram</text>
+        <text>#O *Diego saca el móvil*</text>
       </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Mira qué foto ha subido a Fotogram</text>
+      </speak-player>
       <condition />
       <speak-char idTarget="Jony">
         <resources name="No name" />
-        <text>¡Pero si casi se le ve hasta el alma!</text>
+        <text>#! ¡Pero si casi se le ve hasta el alma!</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
@@ -3375,7 +3612,7 @@
       <condition />
       <child nodeindex="8" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="931" editor-y="566">
+    <dialogue-node nodeindex="7" editor-x="888" editor-y="733">
       <speak-player>
         <resources name="No name" />
         <text>¿Dejarla? ¿Necesita su permiso para irse de viaje?</text>
@@ -3393,15 +3630,15 @@
       <condition />
       <child nodeindex="9" />
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="2274" editor-y="303">
+    <dialogue-node nodeindex="8" editor-x="2220" editor-y="140">
       <speak-player>
         <resources name="No name" />
-        <text>*No aguanto más*</text>
+        <text>#O *No aguanto más*</text>
       </speak-player>
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="1190" editor-y="549" x="1190" y="549">
+    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="1188" editor-y="668" x="1188" y="668">
       <speak-player>
         <text>¿Es tóxica si no hace lo que tú quieres?</text>
         <resources name="No name" />
@@ -3415,7 +3652,7 @@
       <condition />
       <child nodeindex="12" />
     </option-node>
-    <option-node nodeindex="10" random="yes" preListening="yes" editor-x="2612" editor-y="280" x="2612" y="280">
+    <option-node nodeindex="10" random="yes" preListening="yes" editor-x="2530" editor-y="175" x="2530" y="175">
       <speak-player>
         <text>*Defender a Andrea*</text>
         <resources name="No name" />
@@ -3429,7 +3666,7 @@
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <dialogue-node nodeindex="11" editor-x="1476" editor-y="309">
+    <dialogue-node nodeindex="11" editor-x="1468" editor-y="434">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>No es lo que él “quiera”. Se trata de lo que ella debería hacer</text>
@@ -3452,7 +3689,12 @@
       <condition />
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>Y no debería subir fotos como esta. *Saca el móvil* </text>
+        <text>Y no debería subir fotos como esta</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>#O *Diego Saca el móvil* </text>
       </speak-char>
       <condition />
       <child nodeindex="15" />
@@ -3508,10 +3750,10 @@
         <text>Mira lo que subió a Fotogram ayer</text>
       </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>*Diego saca el móvil*</text>
-      </speak-player>
+        <text>#O *Diego saca el móvil*</text>
+      </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
@@ -3555,10 +3797,20 @@
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="13" editor-x="2866" editor-y="191">
+    <dialogue-node nodeindex="13" editor-x="2842" editor-y="108">
       <speak-player>
         <resources name="No name" />
-        <text>Pues a mí me parece muy bien que se haga fotos en bikini. Y que se vaya de viaje. Y que tenga amigos</text>
+        <text>Pues a mí me parece muy bien que se haga fotos en bikini</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Y que se vaya de viaje</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text> Y que tenga amigos</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -3568,7 +3820,7 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="2948" editor-y="406">
+    <dialogue-node nodeindex="14" editor-x="2837" editor-y="462">
       <speak-player>
         <resources name="No name" />
         <text> Bueno, lo hecho, hecho está. Lo mejor sería hablar de otra cosa</text>
@@ -3604,7 +3856,7 @@
       <condition />
       <child nodeindex="20" />
     </option-node>
-    <dialogue-node nodeindex="17" editor-x="1963" editor-y="477">
+    <dialogue-node nodeindex="17" editor-x="1900" editor-y="357">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¿Vigilar? Relaja, solo la sigue. Son pareja, tampoco es tan raro</text>
@@ -3627,7 +3879,7 @@
       <condition />
       <child nodeindex="8" />
     </dialogue-node>
-    <dialogue-node nodeindex="18" editor-x="1966" editor-y="749">
+    <dialogue-node nodeindex="18" editor-x="2112" editor-y="684">
       <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Sí, ese bikini le queda muy bien. No veo el problema en que quiera enseñarlo</text>
@@ -3691,7 +3943,7 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="728" editor-y="58" x="728" y="58">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="566" editor-y="57" x="566" y="57">
       <speak-player>
         <text>Gracias, supongo</text>
         <resources name="No name" />
@@ -3705,7 +3957,7 @@
       <condition />
       <child nodeindex="2" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="1188" editor-y="50">
+    <dialogue-node nodeindex="2" editor-x="1130" editor-y="49">
       <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Imagino que por eso se trabaja tan bien aquí</text>
@@ -3716,14 +3968,14 @@
         <text>¿A qué te refieres con eso? </text>
       </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Ya sabes, sin mujeres distrayendo al resto de empleados</text>
-      </speak-player>
+      </speak-char>
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
-    <option-node nodeindex="3" random="yes" keepShowing="yes" preListening="yes" editor-x="1789" editor-y="40" x="1789" y="40">
+    <option-node nodeindex="3" random="yes" keepShowing="yes" preListening="yes" editor-x="1595" editor-y="21" x="1595" y="21">
       <speak-player>
         <text>¿Insinuas que no soy capaz de trabajar tan bien como tú solo por ser mujer?</text>
         <resources name="No name" />
@@ -3737,7 +3989,7 @@
       <condition />
       <child nodeindex="5" />
     </option-node>
-    <dialogue-node nodeindex="4" editor-x="2283" editor-y="0">
+    <dialogue-node nodeindex="4" editor-x="2080" editor-y="47">
       <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Tu caso en concreto no lo sé, habrá que verlo</text>
@@ -3763,7 +4015,7 @@
         <text>Jason tiene razón, parecía que tenía una menstruación permanente</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Diego">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Jajajajaja, buena esa</text>
       </speak-char>
@@ -3785,7 +4037,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Gracias por hacerme caso*</text>
+        <text>#O *Gracias por hacerme caso*</text>
       </speak-player>
       <condition />
       <child nodeindex="6" />
@@ -3897,7 +4149,7 @@
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <option-node nodeindex="7" random="yes" keepShowing="yes" preListening="yes" editor-x="1228" editor-y="435" x="1228" y="435">
+    <option-node nodeindex="7" random="yes" keepShowing="yes" preListening="yes" editor-x="1053" editor-y="431" x="1053" y="431">
       <speak-player>
         <text>Mi entrevista, por ejemplo, no fue precisamente justa</text>
         <resources name="No name" />
@@ -3983,7 +4235,7 @@
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*Gracias por hacerme caso*</text>
+        <text>#O *Gracias por hacerme caso*</text>
       </speak-player>
       <condition />
       <child nodeindex="6" />
@@ -4168,7 +4420,7 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1928" editor-y="68" x="1928" y="68">
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1781" editor-y="62" x="1781" y="62">
       <speak-player>
         <text>Y tanto que exageran</text>
         <resources name="No name" />
@@ -4182,7 +4434,7 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="5" preListening="yes" editor-x="767" editor-y="479" x="767" y="479">
+    <option-node nodeindex="5" preListening="yes" editor-x="533" editor-y="523" x="533" y="523">
       <speak-player>
         <text>Bueno, no te preocupes por esa cosas, Diego</text>
         <resources name="No name" />
@@ -4274,16 +4526,16 @@
       <condition />
       <child nodeindex="9" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1981" editor-y="369">
+    <dialogue-node nodeindex="7" editor-x="1887" editor-y="416">
       <child nodeindex="10" />
       <effect>
-        <show-text x="300" y="300" frontColor="#B9B014FF" borderColor="#000000FF" uri="">**Televisión: Las jugadoras de fútbol profesional
+        <show-text x="150" y="400" frontColor="#B9B014FF" borderColor="#000000FF" uri="">**Televisión: Las jugadoras de fútbol profesional
 siguen en huelga indefinida, hasta que consigan
  una subida del salario del 20%**</show-text>
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1220" editor-y="451">
+    <dialogue-node nodeindex="8" editor-x="982" editor-y="455">
       <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Deja al chico que piense lo que quiera</text>
@@ -4316,17 +4568,17 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¡Dios que ignorante eres!</text>
+        <text>#! ¡Dios que ignorante eres!</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Mira lo que digo tiene sentido</text>
+        <text>#! Mira lo que digo tiene sentido</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>No me vengas aquí con tu cultura feminista a darme lecciones </text>
+        <text>#! No me vengas aquí con tu cultura feminista a darme lecciones </text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jony">
@@ -4355,7 +4607,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="12" />
     </option-node>
-    <dialogue-node nodeindex="10" editor-x="1998" editor-y="675">
+    <dialogue-node nodeindex="10" editor-x="2246" editor-y="526">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Ya ves, ¿habéis escuchado eso? </text>
@@ -4413,7 +4665,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="13" />
     </dialogue-node>
-    <dialogue-node nodeindex="11" editor-x="4147" editor-y="130">
+    <dialogue-node nodeindex="11" editor-x="4037" editor-y="123">
       <speak-player>
         <resources name="No name" />
         <text>Mira, Jason, bonito</text>
@@ -4456,32 +4708,32 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>¿Quién te crees que eres para hablarme así?</text>
+        <text>#! ¿Quién te crees que eres para hablarme así?</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Va a venir una mujer a darme lecciones morales</text>
+        <text>#! Va a venir una mujer a darme lecciones morales</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Lo que hay que aguantar...</text>
+        <text>#! Lo que hay que aguantar...</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>No te pego una hostia porque te mandaba al hospital</text>
+        <text>#! No te pego una hostia porque te mandaba al hospital</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>A mí me da igual si eres hombre o mujer</text>
+        <text>#! A mí me da igual si eres hombre o mujer</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>Jajaja tú y cuantos más machito de los …</text>
+        <text>#! Jajaja tú y cuantos más machito de los …</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Jony">
@@ -4516,12 +4768,12 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Mira ya estoy harto</text>
+        <text>#! Mira ya estoy harto</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>Me piro de aquí</text>
+        <text>#! Me piro de aquí</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
@@ -4549,7 +4801,7 @@ siguen en huelga indefinida, hasta que consigan
         <condition />
       </effect>
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="2883" editor-y="489">
+    <dialogue-node nodeindex="12" editor-x="2848" editor-y="445">
       <speak-player>
         <resources name="No name" />
         <text>Bueno… voy a ir un momento al baño</text>
@@ -4573,7 +4825,7 @@ siguen en huelga indefinida, hasta que consigan
         <condition />
       </effect>
     </dialogue-node>
-    <option-node nodeindex="13" random="yes" keepShowing="yes" preListening="yes" editor-x="2722" editor-y="779" x="2722" y="779">
+    <option-node nodeindex="13" random="yes" keepShowing="yes" preListening="yes" editor-x="2588" editor-y="732" x="2588" y="732">
       <speak-player>
         <text>Nada que ver, solamente se dedican a lo mismo…</text>
         <resources name="No name" />
@@ -4587,7 +4839,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="16" />
     </option-node>
-    <option-node nodeindex="14" random="yes" preListening="yes" editor-x="4830" editor-y="130" x="4830" y="130">
+    <option-node nodeindex="14" random="yes" preListening="yes" editor-x="4506" editor-y="159" x="4506" y="159">
       <speak-player>
         <text>Para estar con gente así prefiero que se vayan</text>
         <resources name="No name" />
@@ -4607,7 +4859,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="17" />
     </option-node>
-    <dialogue-node nodeindex="15" editor-x="3301" editor-y="669">
+    <dialogue-node nodeindex="15" editor-x="3254" editor-y="594">
       <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>¿Lo dices con ironía?</text>
@@ -4625,7 +4877,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>¡Buenooo!</text>
+        <text>#! ¡Buenooo!</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
@@ -4901,7 +5153,7 @@ siguen en huelga indefinida, hasta que consigan
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="18" random="yes" preListening="yes" editor-x="3906" editor-y="686" x="3906" y="686">
+    <option-node nodeindex="18" random="yes" preListening="yes" editor-x="3669" editor-y="653" x="3669" y="653">
       <speak-player>
         <text>*Dejar la mesa* </text>
         <resources name="No name" />
@@ -4915,7 +5167,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="20" />
     </option-node>
-    <option-node nodeindex="19" preListening="yes" editor-x="3578" editor-y="1099" x="3578" y="1099">
+    <option-node nodeindex="19" preListening="yes" editor-x="3269" editor-y="1092" x="3269" y="1092">
       <speak-player>
         <text>*Dejar la mesa*</text>
         <resources name="No name" />
@@ -4929,7 +5181,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="21" />
     </option-node>
-    <dialogue-node nodeindex="20" editor-x="4384" editor-y="632">
+    <dialogue-node nodeindex="20" editor-x="4238" editor-y="632">
       <speak-player>
         <resources name="No name" />
         <text>A ver si lo entendéis de una vez</text>
@@ -4982,7 +5234,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="22" />
     </dialogue-node>
-    <dialogue-node nodeindex="21" editor-x="3940" editor-y="1099">
+    <dialogue-node nodeindex="21" editor-x="3726" editor-y="1048">
       <speak-player>
         <resources name="No name" />
         <text>Ts… </text>
@@ -5055,7 +5307,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="22" />
     </dialogue-node>
-    <dialogue-node nodeindex="22" editor-x="4752" editor-y="1069">
+    <dialogue-node nodeindex="22" editor-x="4636" editor-y="999">
       <speak-player>
         <resources name="No name" />
         <text>En fin...</text>
@@ -5153,7 +5405,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" editor-x="337" editor-y="51" x="337" y="51">
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="337" editor-y="51" x="337" y="51">
       <speak-player>
         <text>*Intervenir*</text>
         <resources name="No name" />
@@ -5167,7 +5419,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="590" editor-y="61">
+    <dialogue-node nodeindex="2" editor-x="632" editor-y="38">
       <speak-player>
         <resources name="No name" />
         <text>¿Te da miedo que sea gay?</text>
@@ -5208,39 +5460,9 @@ siguen en huelga indefinida, hasta que consigan
         <text>Sentiría que está detrás de mí o algo</text>
       </speak-char>
       <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
-      </speak-player>
-      <condition />
-      <speak-player>
-        <resources name="No name" />
-        <text>
-        </text>
-      </speak-player>
-      <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="576" editor-y="430">
+    <dialogue-node nodeindex="3" editor-x="463" editor-y="574">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Yo no tengo planes…</text>
@@ -5278,7 +5500,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" editor-x="1042" editor-y="106" x="1042" y="106">
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="968" editor-y="97" x="968" y="97">
       <speak-player>
         <text>*Insistir*</text>
       </speak-player>
@@ -5291,7 +5513,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" editor-x="1022" editor-y="457" x="1022" y="457">
+    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="785" editor-y="627" x="785" y="627">
       <speak-player>
         <text>*Continuar el chiste sobre Diego*</text>
         <resources name="No name" />
@@ -5305,7 +5527,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="1360" editor-y="82">
+    <dialogue-node nodeindex="6" editor-x="1434" editor-y="58">
       <speak-player>
         <resources name="No name" />
         <text>¿Detrás de ti solo por ser gay?</text>
@@ -5373,7 +5595,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="7" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1669" editor-y="167">
+    <dialogue-node nodeindex="7" editor-x="1689" editor-y="345">
       <speak-player>
         <resources name="No name" />
         <text>Pues yo creo que me quedaré en casa con mi chico.</text>
@@ -5421,7 +5643,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <dialogue-node nodeindex="8" editor-x="1363" editor-y="485">
+    <dialogue-node nodeindex="8" editor-x="1243" editor-y="660">
       <speak-player>
         <resources name="No name" />
         <text>Si Diego quiere, puede venirse cuando acabe la manicura.</text>
@@ -5462,14 +5684,14 @@ siguen en huelga indefinida, hasta que consigan
         <text>Aunque a ti no te gusta nada de lo que hace Andrea por su cuenta.</text>
       </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>Es que no entiendo por qué querría irse a una discoteca sin mí.</text>
-      </speak-player>
+      </speak-char>
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
-    <dialogue-node nodeindex="9" editor-x="1348" editor-y="977">
+    <dialogue-node nodeindex="9" editor-x="1275" editor-y="1027">
       <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>¿Noche de chicas? ¿Por qué no pueden ir vuestros novios?</text>
@@ -5492,7 +5714,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="12" />
     </dialogue-node>
-    <option-node nodeindex="10" editor-x="1978" editor-y="203" x="1978" y="203">
+    <option-node nodeindex="10" preListening="yes" editor-x="1984" editor-y="197" x="1984" y="197">
       <speak-player>
         <text>¿Me estás vacilando?</text>
         <resources name="No name" />
@@ -5506,7 +5728,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" editor-x="1655" editor-y="569" x="1655" y="569">
+    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="1673" editor-y="754" x="1673" y="754">
       <speak-player>
         <text>¿Porque le gusta divertirse?</text>
         <resources name="No name" />
@@ -5520,7 +5742,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="16" />
     </option-node>
-    <option-node nodeindex="12" random="yes" keepShowing="yes" editor-x="1663" editor-y="1165" x="1663" y="1165">
+    <option-node nodeindex="12" random="yes" keepShowing="yes" preListening="yes" editor-x="1584" editor-y="1090" x="1584" y="1090">
       <speak-player>
         <text>¿Y qué problema habría?</text>
         <resources name="No name" />
@@ -5528,13 +5750,13 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="17" />
       <speak-player>
-        <text>*Reírle el chiste*</text>
+        <text>Jajaja no hombre, intentaremos comportarnos</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="18" />
     </option-node>
-    <dialogue-node nodeindex="13" editor-x="2401" editor-y="134">
+    <dialogue-node nodeindex="13" editor-x="2312" editor-y="140">
       <speak-player>
         <resources name="No name" />
         <text>¿De verdad no ves nada malo en sus comentarios?</text>
@@ -5587,7 +5809,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="14" />
     </dialogue-node>
-    <dialogue-node nodeindex="14" editor-x="2678" editor-y="159">
+    <dialogue-node nodeindex="14" editor-x="2478" editor-y="404">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Bueno, volviendo a los planes...</text>
@@ -5690,7 +5912,12 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>¿Qué pasa? ¿Un tío puede estar con 20 chicas a la vez y una chica no puede hacer lo mismo?</text>
+        <text>¿Qué pasa? </text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¿Un tío puede estar con 20 chicas a la vez y una chica no puede hacer lo mismo?</text>
       </speak-player>
       <condition />
       <speak-char idTarget="Jason">
@@ -5806,7 +6033,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>Pero, no sé... Me quedaría la duda:</text>
+        <text>Pero, no sé... Me quedaría la duda</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Diego">
@@ -5854,12 +6081,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="21" />
     </dialogue-node>
-    <dialogue-node nodeindex="18" editor-x="1966" editor-y="1456">
-      <speak-player>
-        <resources name="No name" />
-        <text>Intentaremos comportarnos.</text>
-      </speak-player>
-      <condition />
+    <dialogue-node nodeindex="18" editor-x="1591" editor-y="1419">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>¡Pero qué dices! Solo se vive una vez.</text>
@@ -5882,7 +6104,12 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Jony">
         <resources name="No name" />
-        <text>Más razones para desmadrarse.</text>
+        <text>Bueno tampoco digo que se vayan con cualquiera</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Simplemente que disfruten y ya está</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jason">
@@ -5907,7 +6134,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="22" />
     </dialogue-node>
-    <option-node nodeindex="19" random="yes" keepShowing="yes" editor-x="2913" editor-y="159" x="2913" y="159">
+    <option-node nodeindex="19" random="yes" keepShowing="yes" preListening="yes" editor-x="2812" editor-y="174" x="2812" y="174">
       <speak-player>
         <text>*Responderle*</text>
         <resources name="No name" />
@@ -5921,7 +6148,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="24" />
     </option-node>
-    <dialogue-node nodeindex="20" editor-x="2705" editor-y="785">
+    <dialogue-node nodeindex="20" editor-x="2556" editor-y="834">
       <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>No digas tonterías. Hace un rato te hacía ilusión.</text>
@@ -5959,7 +6186,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="25" />
     </dialogue-node>
-    <option-node nodeindex="21" random="yes" keepShowing="yes" editor-x="2347" editor-y="1112" x="2347" y="1112">
+    <option-node nodeindex="21" random="yes" keepShowing="yes" preListening="yes" editor-x="2347" editor-y="1112" x="2347" y="1112">
       <speak-player>
         <text>La verdad es que se me están quitando las ganas...</text>
         <resources name="No name" />
@@ -5973,7 +6200,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="26" />
     </option-node>
-    <option-node nodeindex="22" editor-x="2346" editor-y="1471" x="2346" y="1471">
+    <option-node nodeindex="22" preListening="yes" editor-x="2346" editor-y="1471" x="2346" y="1471">
       <speak-player>
         <text>*Irse*</text>
         <resources name="No name" />
@@ -6005,7 +6232,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Jason">
         <resources name="No name" />
-        <text>¿Machista? ¿Yo?</text>
+        <text>#! ¿Machista? ¿Yo?</text>
       </speak-char>
       <condition />
       <speak-player>
@@ -6060,7 +6287,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>¿Te creces solo porque hay una mujer delante?</text>
+        <text>¿Te vienes arriba solo porque hay una mujer delante?</text>
       </speak-char>
       <condition />
       <speak-char idTarget="Jony">
@@ -6128,7 +6355,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>*¿En serio este tipo piensa así?*</text>
+        <text>#O *¿En serio este tipo piensa así?*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -6153,7 +6380,7 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="29" />
     </dialogue-node>
-    <option-node nodeindex="25" editor-x="2984" editor-y="796" x="2984" y="796">
+    <option-node nodeindex="25" preListening="yes" editor-x="2932" editor-y="828" x="2932" y="828">
       <speak-player>
         <text>¿No me lo llevas tomando tú todo el tiempo?</text>
         <resources name="No name" />
@@ -6316,12 +6543,12 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <speak-char idTarget="Diego">
         <resources name="No name" />
-        <text>"¿Esta gente?"</text>
+        <text>¿Esta gente?</text>
       </speak-char>
       <condition />
       <speak-player>
         <resources name="No name" />
-        <text>“¿De verdad no lo entiendes?”</text>
+        <text>#O *¿De verdad no lo entiendes?*</text>
       </speak-player>
       <condition />
       <speak-player>
@@ -6344,10 +6571,15 @@ siguen en huelga indefinida, hasta que consigan
         <text>Mujeres... De todo hacen un drama.</text>
       </speak-char>
       <condition />
-      <speak-player>
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Vale, creo que yo también me voy.</text>
-      </speak-player>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Nos vemos muchachos</text>
+      </speak-char>
       <condition />
       <end-conversation>
         <effect>
@@ -6356,9 +6588,9 @@ siguen en huelga indefinida, hasta que consigan
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="29" random="yes" keepShowing="yes" editor-x="3396" editor-y="446" x="3396" y="446">
+    <option-node nodeindex="29" random="yes" keepShowing="yes" preListening="yes" editor-x="3396" editor-y="446" x="3396" y="446">
       <speak-player>
-        <text>Jajaja. En fin, ya nos veremos, chicos</text>
+        <text>En fin, ya nos veremos, chicos</text>
         <resources name="No name" />
       </speak-player>
       <condition />
@@ -6370,7 +6602,37 @@ siguen en huelga indefinida, hasta que consigan
       <condition />
       <child nodeindex="32" />
     </option-node>
-    <dialogue-node nodeindex="30" editor-x="3221" editor-y="836">
+    <dialogue-node nodeindex="30" editor-x="3505" editor-y="979">
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>En fin, ya es hora de ir subiendo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Jony">
+        <resources name="No name" />
+        <text>Vamos Alexis, hay algunas cosas que quiero enseñarte</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Perfecto</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Chao chicos, ya nos veremos</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Jason">
+        <resources name="No name" />
+        <text>Hasta luego guapa</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Diego">
+        <resources name="No name" />
+        <text>Bye bye</text>
+      </speak-char>
+      <condition />
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
@@ -6473,6 +6735,20 @@ siguen en huelga indefinida, hasta que consigan
   <object id="MesaLuis" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/MesaTrabajoLuis.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="MesaJony" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/MesaTrabajoJony.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
