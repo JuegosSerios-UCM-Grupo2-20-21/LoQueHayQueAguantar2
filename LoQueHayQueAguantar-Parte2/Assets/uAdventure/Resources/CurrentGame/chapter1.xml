@@ -31,6 +31,37 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
+  <character id="Narrador_Auxiliar" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#BCB431" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
   <character id="Recepcionista" behaviour="normal">
     <resources name="No name">
       <asset type="standup" uri="assets/special/EmptyAnimation" />
@@ -356,17 +387,115 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
+  <character id="Telefono" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/animation/TelefonoAnim.eaa.xml" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="LlamadaBalta" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </character>
+  <character id="Alexis" behaviour="normal">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
   <scene id="EscenaComienzoJuego" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
+      <asset type="background" uri="assets/background/fondoNegro.jpg" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="StartButton" x="140" y="110" scale="0.1264225" layer="0" hasInfluenceArea="no">
+        <condition>
+          <inactive flag="Inicio" />
+        </condition>
+      </object-ref>
+    </objects>
+    <characters>
+      <character-ref idTarget="Narrador_Auxiliar" x="142" y="110" scale="0.001" orientation="2" layer="1" hasInfluenceArea="no">
+        <condition>
+          <active flag="Inicio" />
+        </condition>
+      </character-ref>
+    </characters>
   </scene>
-  <scene id="EntradaEdificio" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Escena_Telefono" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/fondoNegro.jpg" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="Telefono" x="134" y="117" scale="0.2458333" orientation="2" layer="1" hasInfluenceArea="no" />
+      <character-ref idTarget="Balta" x="140" y="110" scale="0.001" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+  </scene>
+  <scene id="EntradaEdificio" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -473,7 +602,7 @@
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
-  <scene id="CafeLuis" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="CafeLuis" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -486,9 +615,10 @@
       <character-ref idTarget="Luis" x="334" y="842" scale="1.346705" orientation="2" layer="0" hasInfluenceArea="no" />
       <character-ref idTarget="Anass" x="94" y="583" scale="0.2229025" orientation="2" layer="1" hasInfluenceArea="no" />
       <character-ref idTarget="Gloria" x="559" y="483" scale="0.3021795" orientation="2" layer="2" hasInfluenceArea="no" />
+      <character-ref idTarget="Alexis" x="300" y="460" scale="0.001" orientation="2" layer="3" hasInfluenceArea="no" />
     </characters>
     <active-areas>
-      <active-area id="LuisArea" rectangular="no" x="191" y="120" width="256" height="353" hasInfluenceArea="no" behaviour="normal">
+      <active-area id="LuisArea" rectangular="no" x="193" y="118" width="256" height="353" hasInfluenceArea="no" behaviour="normal">
         <description>
           <name>
           </name>
@@ -505,19 +635,19 @@
             </effect>
           </use>
         </actions>
-        <point x="254" y="175" />
-        <point x="262" y="125" />
-        <point x="333" y="120" />
-        <point x="348" y="228" />
-        <point x="432" y="277" />
-        <point x="447" y="322" />
-        <point x="434" y="446" />
-        <point x="223" y="473" />
-        <point x="191" y="442" />
-        <point x="213" y="329" />
-        <point x="200" y="280" />
-        <point x="234" y="259" />
-        <point x="265" y="233" />
+        <point x="256" y="173" />
+        <point x="264" y="123" />
+        <point x="335" y="118" />
+        <point x="350" y="226" />
+        <point x="434" y="275" />
+        <point x="449" y="320" />
+        <point x="436" y="444" />
+        <point x="225" y="471" />
+        <point x="193" y="440" />
+        <point x="215" y="327" />
+        <point x="202" y="278" />
+        <point x="236" y="257" />
+        <point x="267" y="231" />
       </active-area>
       <active-area id="GloriaArea" rectangular="no" x="451" y="118" width="223" height="328" hasInfluenceArea="no" behaviour="normal">
         <description>
@@ -717,6 +847,237 @@
     </name>
     <default-initial-position x="400" y="450" />
   </scene>
+  <graph-conversation id="ConversacionInicial">
+    <dialogue-node nodeindex="0" editor-x="117" editor-y="97">
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Bienvenido</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Antes de empezar, voy a hacerte unas preguntas</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>¿Has jugado al capítulo 1?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="1" />
+    </dialogue-node>
+    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="729" editor-y="64" x="729" y="64">
+      <speak-player>
+        <text>Sí</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>No</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+    </option-node>
+    <dialogue-node nodeindex="2" editor-x="1212" editor-y="96">
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>¿Cómo acabó el juego?</text>
+      </speak-char>
+      <condition />
+      <child nodeindex="4" />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="247" editor-y="467">
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Bien. En ese caso te haré un resumen</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Tu nombres es Alexis Fernández</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>El día anterior tuviste una entrevista de trabajo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Lamentablemente, no fue lo que esperabas</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Tuviste que aguantar ciertos momentos incómodos y sexistas</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Pero tú eres más fuerte que eso, por eso sigues adelante</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Finalmente, llegaste a conseguir el trabajo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Por eso, estás aquí. Hoy te enfrentarás a tu primer día</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Buena suerte</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="EntradaEdificio" x="320" y="383" transitionTime="2000" transitionType="5" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1304" editor-y="387" x="1304" y="387">
+      <speak-player>
+        <text>Conseguí el trabajo</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="5" />
+      <speak-player>
+        <text>No conseguí el trabajo</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+      <speak-player>
+        <text>No lo sé</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="6" />
+    </option-node>
+    <dialogue-node nodeindex="5" editor-x="1824" editor-y="243">
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Bien</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Entonces, comencemos</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Hoy harás frente a tu primer día de trabajo</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Buena suerte</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="EntradaEdificio" x="320" y="383" transitionTime="2000" transitionType="5" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="6" editor-x="1848" editor-y="512">
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="Escena_Telefono" x="142" y="132" transitionTime="2000" transitionType="5" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="LlamadaBalta">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Buenos días, ¿Alexis?</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Sí, dígame</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Verá, soy Baltasar Manjón</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Ayer tuvimos una entrevista de trabajo</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Si si</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>#O *Como para no acordarme*</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Verá, hemos decidido que al final nos interesa una personad de sus características</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Si lo desea, el puesto es suyo</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>¡Qué buena noticia! Desde luego</text>
+      </speak-player>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Muchas gracias, cuándo empiezo</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Venga a partir del lunes a las 8:30 de la mañana</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>La estaremos esperando</text>
+      </speak-char>
+      <condition />
+      <speak-player>
+        <resources name="No name" />
+        <text>Perfecto, muchas gracias, daré lo mejor de mí</text>
+      </speak-player>
+      <condition />
+      <speak-char idTarget="Balta">
+        <resources name="No name" />
+        <text>Eso esperamos, hasta luego</text>
+      </speak-char>
+      <condition />
+      <end-conversation>
+        <effect>
+          <trigger-scene idTarget="EntradaEdificio" x="320" y="383" transitionTime="2000" transitionType="5" />
+          <condition />
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
   <graph-conversation id="ConverPortero">
     <dialogue-node nodeindex="0" editor-x="51" editor-y="14">
       <speak-char idTarget="Recepcionista">
@@ -6759,6 +7120,30 @@ siguen en huelga indefinida, hasta que consigan
       <detailed>
       </detailed>
     </description>
+  </object>
+  <object id="StartButton" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/StartButton.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <activate flag="Inicio" />
+          <condition />
+          <trigger-conversation idTarget="ConversacionInicial" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
   </object>
   <completable id="Contratada" repeatable="false" type="completable">
     <start-milestone type="SCENE" targetId="EscenaComienzoJuego" />

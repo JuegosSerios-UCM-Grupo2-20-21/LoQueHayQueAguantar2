@@ -13,17 +13,21 @@
 <entry key="Chapter0.CafeLuis.Y">31</entry>
 <entry key="Chapter0.CafeJason.X">432</entry>
 <entry key="Chapter0.CafeJason.Y">295</entry>
-<entry key="Chapter0.Transicion_Mesas_Cafe.X">688</entry>
-<entry key="Chapter0.Transicion_Mesas_Cafe.Y">215</entry>
+<entry key="Chapter0.Transicion_Mesas_Cafe.X">659</entry>
+<entry key="Chapter0.Transicion_Mesas_Cafe.Y">141</entry>
 <entry key="Chapter0.MesasTrabajo_1.X">335</entry>
 <entry key="Chapter0.MesasTrabajo_1.Y">7</entry>
 <entry key="Chapter0.MesasTrabajo_2.X">334</entry>
 <entry key="Chapter0.MesasTrabajo_2.Y">177</entry>
 <entry key="Chapter0.CafeJony.X">842</entry>
 <entry key="Chapter0.CafeJony.Y">174</entry>
-<entry key="Chapter0.EscenaTransicionNegro.X">684</entry>
-<entry key="Chapter0.EscenaTransicionNegro.Y">55</entry>
-<entry key="Chapter0.EscenaComienzoJuego.X">-333</entry>
-<entry key="Chapter0.EscenaComienzoJuego.Y">13</entry>
+<entry key="Chapter0.EscenaTransicionNegro.X">300</entry>
+<entry key="Chapter0.EscenaTransicionNegro.Y">493</entry>
+<entry key="Chapter0.EscenaComienzoJuego.X">-309</entry>
+<entry key="Chapter0.EscenaComienzoJuego.Y">85</entry>
+<entry key="Chapter0.Escena_Telefono.X">-203</entry>
+<entry key="Chapter0.Escena_Telefono.Y">89</entry>
+<entry key="Chapter0.FIN.X">1051</entry>
+<entry key="Chapter0.FIN.Y">126</entry>
 </properties>
 
