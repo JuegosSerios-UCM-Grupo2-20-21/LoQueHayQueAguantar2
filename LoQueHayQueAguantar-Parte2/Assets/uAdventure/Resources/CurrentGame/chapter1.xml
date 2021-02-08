@@ -840,6 +840,9 @@
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <characters>
+      <character-ref idTarget="Narrador_Auxiliar" x="142" y="110" scale="0.001" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
   </scene>
   <scene id="EscenaTransicionNegro" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -3368,6 +3371,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -3486,6 +3491,8 @@
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="400" y="450" transitionTime="3500" transitionType="5" />
+          <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
           <condition />
         </effect>
       </end-conversation>
@@ -3821,6 +3828,8 @@
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
+          <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
           <condition />
         </effect>
       </end-conversation>
@@ -5663,6 +5672,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -5864,6 +5875,8 @@
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
+          <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
           <condition />
         </effect>
       </end-conversation>
@@ -6827,6 +6840,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -6957,6 +6972,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -7004,6 +7021,8 @@
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
+          <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
           <condition />
         </effect>
       </end-conversation>
@@ -7093,6 +7112,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -7145,6 +7166,8 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -7152,6 +7175,8 @@
       <end-conversation>
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
+          <condition />
+          <trigger-conversation idTarget="FinalConclusionesCreditos" />
           <condition />
         </effect>
       </end-conversation>
@@ -7236,8 +7261,60 @@
         <effect>
           <trigger-scene idTarget="FIN" x="142" y="132" transitionTime="3500" transitionType="5" />
           <condition />
+          <trigger-conversation idTarget="ConverGrupoJonyFinde" />
+          <condition />
         </effect>
       </end-conversation>
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="FinalConclusionesCreditos">
+    <dialogue-node nodeindex="0" editor-x="45" editor-y="52">
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Hoy en día, estas conversaciones siguen siendo comunes.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Las personas como Jason, Gloria, Diego o Anass existen.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Los comentarios y chistes del juego forman parte de lo que hay que aguantar todos los días.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Pero, ¿de verdad hay que aguantarlo?</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>No aguantes los comentarios ofensivos.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>No aguantes los chistes de mal gusto.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>No aguantes que el sexismo continúe existiendo.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Este proyecto ha sido desarrollado por Stiven Arias, Paula Martínez y Ana Martín, con ayuda de Cristina Alonso.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>Queremos agradecer especialmente a Víctor y a Balta, por facilitarnos las herramientas y el conocimiento necesario.</text>
+      </speak-char>
+      <condition />
+      <end-conversation />
     </dialogue-node>
   </graph-conversation>
   <object id="MesaLuis" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
