@@ -457,7 +457,7 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="EscenaComienzoJuego" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="EscenaComienzoJuego" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -481,7 +481,7 @@
       </character-ref>
     </characters>
   </scene>
-  <scene id="Escena_Telefono" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Escena_Telefono" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -593,7 +593,7 @@
       <character-ref idTarget="Jony" x="678" y="690" scale="0.1922915" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="Transicion_Mesas_Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="Transicion_Mesas_Cafe" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -831,7 +831,7 @@
       </active-area>
     </active-areas>
   </scene>
-  <scene id="FIN" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="FIN" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -844,7 +844,7 @@
       <character-ref idTarget="Narrador_Auxiliar" x="142" y="110" scale="0.001" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
-  <scene id="EscenaTransicionNegro" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="EscenaTransicionNegro" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="cutscene">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -873,14 +873,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="729" editor-y="64" x="729" y="64">
+    <option-node nodeindex="1" question="Pregunta_Intro" random="yes" keepShowing="yes" preListening="yes" editor-x="729" editor-y="64" x="729" y="64">
       <speak-player>
         <text>Sí</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>No</text>
         <resources name="No name" />
       </speak-player>
@@ -948,8 +948,8 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1304" editor-y="387" x="1304" y="387">
-      <speak-player>
+    <option-node nodeindex="4" question="Pregunta_Contratada" random="yes" keepShowing="yes" preListening="yes" editor-x="1304" editor-y="387" x="1304" y="387">
+      <speak-player correct="true">
         <text>Conseguí el trabajo</text>
         <resources name="No name" />
       </speak-player>
@@ -1295,14 +1295,14 @@
         <condition />
       </effect>
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="10" editor-y="246" x="10" y="246">
-      <speak-player>
+    <option-node nodeindex="1" question="Eleccion_Grupo" keepShowing="yes" preListening="yes" editor-x="10" editor-y="246" x="10" y="246">
+      <speak-player correct="true">
         <text>Elegir grupo de Luis</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>Elegir grupo de Jonathan</text>
         <resources name="No name" />
       </speak-player>
@@ -1312,7 +1312,9 @@
     <dialogue-node nodeindex="2" editor-x="499" editor-y="169">
       <end-conversation>
         <effect>
-          <trigger-scene idTarget="CafeLuis" x="375" y="435" transitionTime="1500" transitionType="3" />
+          <activate flag="GrupoElegido" />
+          <condition />
+          <trigger-scene idTarget="CafeLuis" x="325" y="337" transitionTime="1500" transitionType="3" />
           <condition />
         </effect>
       </end-conversation>
@@ -1320,6 +1322,8 @@
     <dialogue-node nodeindex="3" editor-x="540" editor-y="456">
       <end-conversation>
         <effect>
+          <activate flag="GrupoElegido" />
+          <condition />
           <trigger-scene idTarget="CafeJony" x="325" y="337" transitionTime="1500" transitionType="4" />
           <condition />
         </effect>
@@ -1327,8 +1331,8 @@
     </dialogue-node>
   </graph-conversation>
   <graph-conversation id="LuisConver">
-    <option-node nodeindex="0" preListening="yes" editor-x="39" editor-y="132" x="39" y="132">
-      <speak-player>
+    <option-node nodeindex="0" question="Respuesta_Luis" preListening="yes" editor-x="39" editor-y="132" x="39" y="132">
+      <speak-player correct="true">
         <text>*Contar cómo está yendo mi primer día*</text>
         <resources name="No name" />
       </speak-player>
@@ -1340,7 +1344,7 @@
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Saludar sin más*</text>
         <resources name="No name" />
       </speak-player>
@@ -1399,14 +1403,14 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1977" editor-y="98" x="1977" y="98">
-      <speak-player>
+    <option-node nodeindex="5" question="Tema_Luis1" random="yes" keepShowing="yes" preListening="yes" editor-x="1847" editor-y="101" x="1847" y="101">
+      <speak-player correct="true">
         <text>*Hablar de vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="6" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el fin de semana*</text>
         <resources name="No name" />
       </speak-player>
@@ -1418,6 +1422,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisVida" />
           <condition />
+          <activate flag="Tema1Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1425,6 +1431,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisFinde" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -1454,14 +1462,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="118" editor-y="318" x="118" y="318">
-      <speak-player>
+    <option-node nodeindex="1" question="Tema_Luis1" keepShowing="yes" preListening="yes" editor-x="118" editor-y="318" x="118" y="318">
+      <speak-player correct="true">
         <text>*Hablar de vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el fin de semana*</text>
         <resources name="No name" />
       </speak-player>
@@ -1473,13 +1481,17 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisVida" />
           <condition />
+          <activate flag="Tema1Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="3" editor-x="449" editor-y="453">
+    <dialogue-node nodeindex="3" editor-x="741" editor-y="525">
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisFinde" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -1514,14 +1526,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" keepShowing="yes" preListening="yes" editor-x="143" editor-y="396" x="143" y="396">
-      <speak-player>
+    <option-node nodeindex="1" question="Tema_Luis1" keepShowing="yes" preListening="yes" editor-x="143" editor-y="396" x="143" y="396">
+      <speak-player correct="true">
         <text>*Hablar de vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el fin de semana*</text>
         <resources name="No name" />
       </speak-player>
@@ -1533,6 +1545,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisVida" />
           <condition />
+          <activate flag="Tema1Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1540,6 +1554,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisFinde" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -1569,14 +1585,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" preListening="yes" editor-x="374" editor-y="129" x="374" y="129">
-      <speak-player>
+    <option-node nodeindex="1" question="Tema_Jony1" preListening="yes" editor-x="374" editor-y="129" x="374" y="129">
+      <speak-player correct="true">
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el trabajo*</text>
         <resources name="No name" />
       </speak-player>
@@ -1588,6 +1604,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyVida" />
           <condition />
+          <activate flag="Tema1Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1595,6 +1613,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyTrabajos" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -1629,14 +1649,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" preListening="yes" editor-x="323" editor-y="87" x="323" y="87">
-      <speak-player>
+    <option-node nodeindex="1" question="Tema_Jony1" preListening="yes" editor-x="323" editor-y="87" x="323" y="87">
+      <speak-player correct="true">
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el trabajo*</text>
         <resources name="No name" />
       </speak-player>
@@ -1647,6 +1667,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyVida" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -1679,8 +1701,8 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" preListening="yes" editor-x="347" editor-y="117" x="347" y="117">
-      <speak-player>
+    <option-node nodeindex="1" question="Respuesta_Jason_Guapa" preListening="yes" editor-x="347" editor-y="117" x="347" y="117">
+      <speak-player correct="true">
         <text>Encantada, yo soy Alexis</text>
         <resources name="No name" />
       </speak-player>
@@ -1711,14 +1733,14 @@
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
-    <option-node nodeindex="3" preListening="yes" editor-x="824" editor-y="48" x="824" y="48">
-      <speak-player>
+    <option-node nodeindex="3" question="Tema_Jony1" preListening="yes" editor-x="824" editor-y="48" x="824" y="48">
+      <speak-player correct="true">
         <text>*Hablar sobre vida personal*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="4" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar sobre el trabajo*</text>
         <resources name="No name" />
       </speak-player>
@@ -1730,6 +1752,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyVida" />
           <condition />
+          <activate flag="Tema1Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -1737,6 +1761,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyTrabajos" />
+          <condition />
+          <activate flag="Tema1Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -2280,14 +2306,14 @@
       <condition />
       <child nodeindex="12" />
     </dialogue-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="4270" editor-y="392" x="4270" y="392">
-      <speak-player>
+    <option-node nodeindex="11" question="Tema_Luis2" random="yes" keepShowing="yes" preListening="yes" editor-x="4270" editor-y="392" x="4270" y="392">
+      <speak-player correct="true">
         <text>*Hablar de educación*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="13" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar de trabajo*</text>
         <resources name="No name" />
       </speak-player>
@@ -2313,6 +2339,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisEstudios" />
           <condition />
+          <activate flag="Tema2Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2320,6 +2348,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisTrabajo" />
+          <condition />
+          <activate flag="Tema2Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -2796,14 +2826,14 @@
       <condition />
       <child nodeindex="17" />
     </option-node>
-    <option-node nodeindex="15" random="yes" keepShowing="yes" preListening="yes" editor-x="4216" editor-y="722" x="4216" y="722">
-      <speak-player>
+    <option-node nodeindex="15" question="Tema_Luis2" random="yes" keepShowing="yes" preListening="yes" editor-x="4216" editor-y="722" x="4216" y="722">
+      <speak-player correct="true">
         <text>*Hablar de educación*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="18" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar de trabajo*</text>
         <resources name="No name" />
       </speak-player>
@@ -2867,6 +2897,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisEstudios" />
           <condition />
+          <activate flag="Tema2Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -2874,6 +2906,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoLuisTrabajo" />
+          <condition />
+          <activate flag="Tema2Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -4325,14 +4359,14 @@
       <condition />
       <child nodeindex="18" />
     </option-node>
-    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="3212" editor-y="249" x="3212" y="249">
-      <speak-player>
+    <option-node nodeindex="16" question="Tema_Jony2" random="yes" keepShowing="yes" preListening="yes" editor-x="3212" editor-y="249" x="3212" y="249">
+      <speak-player correct="true">
         <text>*Hablar sobre aficiones*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="19" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar del próximo fin de semana*</text>
         <resources name="No name" />
       </speak-player>
@@ -4390,6 +4424,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyAficiones" />
           <condition />
+          <activate flag="Tema2Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -4397,6 +4433,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyFinde" />
+          <condition />
+          <activate flag="Tema2Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -4628,21 +4666,21 @@
       <condition />
       <child nodeindex="7" />
     </dialogue-node>
-    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="2632" editor-y="350" x="2632" y="350">
-      <speak-player>
+    <option-node nodeindex="6" question="Tema_Jony2" random="yes" keepShowing="yes" preListening="yes" editor-x="2393" editor-y="343" x="2393" y="343">
+      <speak-player correct="true">
         <text>*Hablar de aficiones*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Hablar del fin de semana*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <option-node nodeindex="7" random="yes" keepShowing="yes" preListening="yes" editor-x="1053" editor-y="431" x="1053" y="431">
+    <option-node nodeindex="7" random="yes" keepShowing="yes" preListening="yes" editor-x="954" editor-y="416" x="954" y="416">
       <speak-player>
         <text>Mi entrevista, por ejemplo, no fue precisamente justa</text>
         <resources name="No name" />
@@ -4661,6 +4699,8 @@
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyAficiones" />
           <condition />
+          <activate flag="Tema2Elegido" />
+          <condition />
         </effect>
       </end-conversation>
     </dialogue-node>
@@ -4668,6 +4708,8 @@
       <end-conversation>
         <effect>
           <trigger-conversation idTarget="ConverGrupoJonyFinde" />
+          <condition />
+          <activate flag="Tema2Elegido" />
           <condition />
         </effect>
       </end-conversation>
@@ -7314,7 +7356,12 @@
         <text>Queremos agradecer especialmente a Víctor y a Balta, por facilitarnos las herramientas y el conocimiento necesario.</text>
       </speak-char>
       <condition />
-      <end-conversation />
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="FIN_Cutscene" />
+          <condition />
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
   <object id="MesaLuis" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
@@ -7369,24 +7416,81 @@
       </use>
     </actions>
   </object>
-  <completable id="Contratada" repeatable="false" type="completable">
+  <completable id="Introduccion" repeatable="false" type="completable">
     <start-milestone type="SCENE" targetId="EscenaComienzoJuego" />
+    <end-milestone type="SCENE" targetId="EntradaEdificio" />
+    <progress type="SUM" />
+    <score type="VARIABLE" method="SINGLE" id="ConverLuisJason" />
+  </completable>
+  <completable id="Presentaciones" repeatable="false" type="completable">
+    <start-milestone type="COMPLETABLE" targetId="Introduccion" />
+    <end-milestone type="SCENE" targetId="Transicion_Mesas_Cafe" />
+    <progress type="SUM">
+      <milestone type="CHARACTER" targetId="Luis" />
+      <milestone type="CHARACTER" targetId="Jony" />
+      <milestone type="CONDITION">
+        <condition>
+          <equals var="ConverLuisJason" value="1" />
+        </condition>
+      </milestone>
+      <milestone type="CONDITION">
+        <condition>
+          <equals var="ConverLuisJason" value="2" />
+        </condition>
+      </milestone>
+      <milestone type="CONDITION">
+        <condition>
+          <equals var="ConverLuisJason" value="3" />
+        </condition>
+      </milestone>
+      <milestone type="CONDITION">
+        <condition>
+          <equals var="ConverLuisJason" value="4" />
+        </condition>
+      </milestone>
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="ConverLuisJason" />
+  </completable>
+  <completable id="EleccionGrupo" repeatable="false" type="completable">
+    <start-milestone type="COMPLETABLE" targetId="EleccionGrupo" />
     <end-milestone type="CONDITION">
       <condition>
-        <active flag="Contratada" />
+        <active flag="GrupoElegido" />
       </condition>
     </end-milestone>
     <progress type="SUM" />
-    <score type="COMPLETABLE" method="SINGLE" id="Contratada" />
+    <score type="VARIABLE" method="SINGLE" id="ConverLuisJason" />
   </completable>
-  <completable id="NoContratada" repeatable="false" type="completable">
-    <start-milestone type="SCENE" targetId="EscenaComienzoJuego" />
-    <end-milestone type="CONDITION">
-      <condition>
-        <active flag="NoContratada" />
-      </condition>
-    </end-milestone>
-    <progress type="SUM" />
-    <score type="COMPLETABLE" method="SINGLE" id="NoContratada" />
+  <completable id="Cafeteria" repeatable="false" type="completable">
+    <start-milestone type="COMPLETABLE" targetId="EleccionGrupo" />
+    <end-milestone type="SCENE" targetId="FIN" />
+    <progress type="SPECIFIC">
+      <milestone type="CHARACTER" targetId="Jony" progress="0,2" />
+      <milestone type="CHARACTER" targetId="Luis" progress="0,2" />
+      <milestone type="CHARACTER" targetId="Diego" progress="0,2" />
+      <milestone type="CHARACTER" targetId="Anass" progress="0,2" />
+      <milestone type="CHARACTER" targetId="Jason" progress="0,2" />
+      <milestone type="CHARACTER" targetId="Gloria" progress="0,2" />
+      <milestone type="CONDITION" progress="0,6">
+        <condition>
+          <active flag="Tema1Elegido" />
+        </condition>
+      </milestone>
+      <milestone type="CONDITION" progress="1">
+        <condition>
+          <active flag="Tema2Elegido" />
+        </condition>
+      </milestone>
+    </progress>
+    <score type="VARIABLE" method="SINGLE" id="ConverLuisJason" />
   </completable>
+  <slidescene id="FIN_Cutscene" start="no" next="end-chapter" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/Anim_FIN.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
 </eAdventure>
