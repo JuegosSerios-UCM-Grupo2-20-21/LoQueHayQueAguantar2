@@ -2042,14 +2042,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="351" editor-y="34" x="351" y="34">
-      <speak-player>
+    <option-node nodeindex="1" question="Luis_Vida_QueTal" random="yes" keepShowing="yes" preListening="yes" editor-x="351" editor-y="34" x="351" y="34">
+      <speak-player correct="true">
         <text>Yo de momento bien. La verdad que tengo ganas de empezar a currar y demostrar mis aptitudes</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>Bien bien, creo que hoy va a ser un buen día</text>
         <resources name="No name" />
       </speak-player>
@@ -2094,8 +2094,8 @@
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
-    <option-node nodeindex="3" random="yes" keepShowing="yes" preListening="yes" editor-x="830" editor-y="322" x="830" y="322">
-      <speak-player>
+    <option-node nodeindex="3" question="Luis_Vida_GloriaRenuncia" random="yes" keepShowing="yes" preListening="yes" editor-x="830" editor-y="322" x="830" y="322">
+      <speak-player correct="true">
         <text>¿Y el trabajo?</text>
         <resources name="No name" />
       </speak-player>
@@ -2166,8 +2166,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1983" editor-y="459" x="1983" y="459">
-      <speak-player>
+    <option-node nodeindex="5" question="Luis_Vida_HijosAlexis" random="yes" keepShowing="yes" preListening="yes" editor-x="1983" editor-y="459" x="1983" y="459">
+      <speak-player correct="true">
         <text>Si queréis apostar, no me viene mal ganar un dinerillo extra</text>
         <resources name="No name" />
       </speak-player>
@@ -2246,21 +2246,21 @@
       <condition />
       <child nodeindex="9" />
     </dialogue-node>
-    <option-node nodeindex="8" random="yes" keepShowing="yes" preListening="yes" editor-x="3183" editor-y="350" x="3183" y="350">
+    <option-node nodeindex="8" question="Luis_Vida_HijosAlexis2" random="yes" keepShowing="yes" preListening="yes" editor-x="3183" editor-y="350" x="3183" y="350">
       <speak-player>
         <text>*Será mejor vamos a cambiar de tema*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="9" />
-      <speak-player>
+      <speak-player correct="true">
         <text>De momento estoy bien así, no insistas jajaja</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="10" />
     </option-node>
-    <dialogue-node nodeindex="9" editor-x="3750" editor-y="359">
+    <dialogue-node nodeindex="9" editor-x="3816" editor-y="401">
       <speak-char idTarget="Alexis">
         <resources name="No name" />
         <text>Bueno, mejor cambiemos de tema</text>
@@ -2320,14 +2320,14 @@
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <option-node nodeindex="12" random="yes" keepShowing="yes" preListening="yes" editor-x="3546" editor-y="747" x="3546" y="747">
+    <option-node nodeindex="12" question="Luis_Vida_OpinarAlexis" random="yes" keepShowing="yes" preListening="yes" editor-x="3546" editor-y="747" x="3546" y="747">
       <speak-player>
         <text>*Cambiar de tema*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="9" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Opinar*</text>
         <resources name="No name" />
       </speak-player>
@@ -2392,7 +2392,7 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="4300" editor-y="750" x="4300" y="750">
+    <option-node nodeindex="16" question="Luis_Vida_Final" random="yes" keepShowing="yes" preListening="yes" editor-x="4280" editor-y="768" x="4280" y="768">
       <speak-player>
         <text>*Que poquito voy a durar en este grupo...*</text>
         <resources name="No name" />
@@ -2400,12 +2400,12 @@
       <condition />
       <child nodeindex="9" />
       <speak-player>
-        <text>*Tal vez exagere*</text>
+        <text>*Tal vez estoy exagerando*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="9" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Mmm bueno, ojalá que no piensen así con todo, habrá que darles otra oportunidad*</text>
         <resources name="No name" />
       </speak-player>
@@ -2437,14 +2437,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="84" editor-y="303" x="84" y="303">
-      <speak-player>
+    <option-node nodeindex="1" question="Luis_Finde_AlexisPlanes" random="yes" keepShowing="yes" preListening="yes" editor-x="84" editor-y="303" x="84" y="303">
+      <speak-player correct="true">
         <text>Yo saldré por ahí con mi amigas a tomar algo</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>Pff pues no lo sé, creo que me quedaré en casa con mi pareja</text>
         <resources name="No name" />
       </speak-player>
@@ -2487,8 +2487,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1061" editor-y="194" x="1061" y="194">
-      <speak-player>
+    <option-node nodeindex="4" question="Luis_Finde_PlanesNovio" random="yes" keepShowing="yes" preListening="yes" editor-x="900" editor-y="216" x="900" y="216">
+      <speak-player correct="true">
         <text>Jajaja no sé, a lo mejor él queda con sus amigos o se queda jugando o viendo la tele en casa</text>
         <resources name="No name" />
       </speak-player>
@@ -2501,20 +2501,20 @@
       <condition />
       <child nodeindex="6" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="1134" editor-y="586" x="1134" y="586">
+    <option-node nodeindex="5" question="Luis_Finde_CuidarHombres" random="yes" keepShowing="yes" preListening="yes" editor-x="941" editor-y="575" x="941" y="575">
       <speak-player>
         <text>*¿Que le cuide? quién se cree que es*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="7" />
-      <speak-player>
+      <speak-player correct="true">
         <text>A ver, mi novio se puede cuidar solito jajaja pero nada quita que nos guste pasar tiempo juntos </text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="7" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Sabéis que las mujeres no existen para servir a los hombres no?</text>
         <resources name="No name" />
       </speak-player>
@@ -2589,7 +2589,7 @@
       <condition />
       <child nodeindex="9" />
     </dialogue-node>
-    <dialogue-node nodeindex="7" editor-x="1866" editor-y="583">
+    <dialogue-node nodeindex="7" editor-x="2142" editor-y="593">
       <speak-char idTarget="Gloria">
         <resources name="No name" />
         <text>Pues nosotros llevaremos al crío al parque o algo, tal vez al cine</text>
@@ -7426,6 +7426,7 @@
     <start-milestone type="COMPLETABLE" targetId="Introduccion" />
     <end-milestone type="SCENE" targetId="Transicion_Mesas_Cafe" />
     <progress type="SUM">
+      <milestone type="CHARACTER" targetId="Recepcionista" />
       <milestone type="CHARACTER" targetId="Luis" />
       <milestone type="CHARACTER" targetId="Jony" />
       <milestone type="CONDITION">
@@ -7452,7 +7453,7 @@
     <score type="VARIABLE" method="SINGLE" id="ConverLuisJason" />
   </completable>
   <completable id="EleccionGrupo" repeatable="false" type="completable">
-    <start-milestone type="COMPLETABLE" targetId="EleccionGrupo" />
+    <start-milestone type="COMPLETABLE" targetId="Presentaciones" />
     <end-milestone type="CONDITION">
       <condition>
         <active flag="GrupoElegido" />
