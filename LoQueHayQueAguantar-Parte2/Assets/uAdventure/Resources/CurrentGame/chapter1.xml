@@ -2690,8 +2690,8 @@
       <condition />
       <child nodeindex="7" />
     </dialogue-node>
-    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="2085" editor-y="125" x="2085" y="125">
-      <speak-player>
+    <option-node nodeindex="9" question="Luis_Finde_NocheSola" random="yes" keepShowing="yes" preListening="yes" editor-x="2085" editor-y="125" x="2085" y="125">
+      <speak-player correct="true">
         <text>Sinceramente, no creo que me pase nada...</text>
         <resources name="No name" />
       </speak-player>
@@ -2704,14 +2704,14 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2556" editor-y="624" x="2556" y="624">
+    <option-node nodeindex="10" question="Luis_Finde_Peliculas_Disney" random="yes" keepShowing="yes" preListening="yes" editor-x="2556" editor-y="624" x="2556" y="624">
       <speak-player>
         <text>*Creo que mejor no me esfuerzo con esta gente*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="12" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Tan forzado os parece que una mujer sea independiente?</text>
         <resources name="No name" />
       </speak-player>
@@ -2812,8 +2812,8 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="14" random="yes" keepShowing="yes" preListening="yes" editor-x="3274" editor-y="168" x="3274" y="168">
-      <speak-player>
+    <option-node nodeindex="14" question="Luis_Finde_Videojuegos_Gloria" random="yes" keepShowing="yes" preListening="yes" editor-x="3085" editor-y="164" x="3085" y="164">
+      <speak-player correct="true">
         <text>Eeh, no sé por qué lo dices, pero a mí me encantan los videojuegos</text>
         <resources name="No name" />
       </speak-player>
@@ -2840,7 +2840,7 @@
       <condition />
       <child nodeindex="19" />
     </option-node>
-    <option-node nodeindex="16" random="yes" keepShowing="yes" preListening="yes" editor-x="2906" editor-y="1083" x="2906" y="1083">
+    <option-node nodeindex="16" question="Luis_Finde_Papel_Forzado" random="yes" keepShowing="yes" preListening="yes" editor-x="2906" editor-y="1083" x="2906" y="1083">
       <speak-player>
         <text>Bueno, quizás tengas parte de razón...</text>
         <resources name="No name" />
@@ -2950,7 +2950,7 @@
       <condition />
       <child nodeindex="15" />
     </dialogue-node>
-    <option-node nodeindex="21" random="yes" keepShowing="yes" preListening="yes" editor-x="4376" editor-y="316" x="4376" y="316">
+    <option-node nodeindex="21" question="Luis_Finde_Videojuegos_2" random="yes" keepShowing="yes" preListening="yes" editor-x="4190" editor-y="300" x="4190" y="300">
       <speak-player>
         <text>Eso es por la opresión que ha sufrido la mujer estos últimos siglos, básicamente</text>
         <resources name="No name" />
@@ -3037,14 +3037,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="50" editor-y="247" x="50" y="247">
-      <speak-player>
+    <option-node nodeindex="1" question="Luis_Trabajo_Puesto_Importante" random="yes" keepShowing="yes" preListening="yes" editor-x="50" editor-y="247" x="50" y="247">
+      <speak-player correct="true">
         <text>A mí no me importaría, pero tampoco creo que llegue la ocasión. </text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Por? Parece un puesto importante. Podría estar bien. </text>
         <resources name="No name" />
       </speak-player>
@@ -3185,7 +3185,7 @@
       <condition />
       <child nodeindex="6" />
     </dialogue-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="403" editor-y="834" x="403" y="834">
+    <option-node nodeindex="5" question="Luis_Trabajo_Oportunidades" random="yes" keepShowing="yes" preListening="yes" editor-x="403" editor-y="834" x="403" y="834">
       <speak-player>
         <text>Claro, pero hay que ser realista.  </text>
         <resources name="No name" />
@@ -3199,14 +3199,14 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="6" random="yes" keepShowing="yes" preListening="yes" editor-x="1186" editor-y="367" x="1186" y="367">
+    <option-node nodeindex="6" question="Luis_Trabajo_Noticias" random="yes" keepShowing="yes" preListening="yes" editor-x="1186" editor-y="367" x="1186" y="367">
       <speak-player>
         <text>*Ignorar la noticia*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Volver a sacar el tema*</text>
         <resources name="No name" />
       </speak-player>
@@ -3357,28 +3357,28 @@
       <condition />
       <child nodeindex="11" />
     </dialogue-node>
-    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="2457" editor-y="177" x="2457" y="177">
+    <option-node nodeindex="10" question="Luis_Trabajo_Pocas_Mujeres" random="yes" keepShowing="yes" preListening="yes" editor-x="2457" editor-y="177" x="2457" y="177">
       <speak-player>
         <text>*No creo que a Gloria o a Anass les guste lo que quiero decir. Mejor me callo*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="12" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Qué diablos. Si ya ha salido la conversación, voy a dar mi opinión*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="13" />
     </option-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="1998" editor-y="744" x="1998" y="744">
+    <option-node nodeindex="11" question="Luis_Trabajo_Gente_Mas_Formada" random="yes" keepShowing="yes" preListening="yes" editor-x="1914" editor-y="740" x="1914" y="740">
       <speak-player>
         <text>No lo puedes estar diciendo en serio</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="14" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Gente más formada? ¿Hablas de los hombres?</text>
         <resources name="No name" />
       </speak-player>
@@ -3561,8 +3561,8 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="451" editor-y="49" x="451" y="49">
-      <speak-player>
+    <option-node nodeindex="1" question="Luis_Estudios_Television" random="yes" keepShowing="yes" preListening="yes" editor-x="281" editor-y="49" x="281" y="49">
+      <speak-player correct="true">
         <text>Sí, un documental sobre Lovelace esta noche, pensaba verlo</text>
         <resources name="No name" />
       </speak-player>
@@ -3575,7 +3575,7 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="737" editor-y="92">
+    <dialogue-node nodeindex="2" editor-x="527" editor-y="76">
       <speak-char idTarget="Alexis">
         <resources name="No name" />
         <text>Sí, un documental sobre Lovelace esta noche, pensaba verlo</text>
@@ -3626,8 +3626,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" keepShowing="yes" preListening="yes" editor-x="1076" editor-y="10" x="1076" y="10">
-      <speak-player>
+    <option-node nodeindex="4" question="Luis_Estudios_Ada_Lovelace" keepShowing="yes" preListening="yes" editor-x="778" editor-y="76" x="778" y="76">
+      <speak-player correct="true">
         <text>Es la madre de la programación, tú, al menos, que te dedicas a ello, deberías saberlo</text>
         <resources name="No name" />
       </speak-player>
@@ -3640,14 +3640,14 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="5" keepShowing="yes" preListening="yes" editor-x="383" editor-y="527" x="383" y="527">
-      <speak-player>
+    <option-node nodeindex="5" question="Luis_Estudios_Poco_Reconocimiento" keepShowing="yes" preListening="yes" editor-x="392" editor-y="483" x="392" y="483">
+      <speak-player correct="true">
         <text>Que se hayan reconocido algunas no significa que otras muchas no hayan sido tapadas por nombres masculinos, o ignoradas por ser mujer</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
+      <speak-player correct="true">
         <text>Y muchísimas más que hay, pero nunca se estudian en las escuelas</text>
         <resources name="No name" />
       </speak-player>
@@ -3868,14 +3868,14 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="10" random="yes" keepShowing="yes" preListening="yes" editor-x="1094" editor-y="699" x="1094" y="699">
-      <speak-player>
+    <option-node nodeindex="10" question="Luis_Estudios_Ya_No_Hay_Machismo" random="yes" keepShowing="yes" preListening="yes" editor-x="1071" editor-y="580" x="1071" y="580">
+      <speak-player correct="true">
         <text>Nooo, para nada, por eso ahora que se conoce la existencia de tantos personajes históricos femeninos, se estudian tanto en las escuelas y todo el mundo sabe de ellas. Es ironía</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="11" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Cómo que no hay tantas? Ves, y luego dices que no hay machismo, tu desconocimiento e incultura al respecto por parte del sistema y la sociedad es puro machismo</text>
         <resources name="No name" />
       </speak-player>
@@ -3958,8 +3958,8 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="304" editor-y="28" x="304" y="28">
-      <speak-player>
+    <option-node nodeindex="1" question="Jony_Vida_Como_Andrea" random="yes" keepShowing="yes" preListening="yes" editor-x="304" editor-y="28" x="304" y="28">
+      <speak-player correct="true">
         <text>¿Como Andrea? ¿Qué pasa, que ella también es rubia?</text>
         <resources name="No name" />
       </speak-player>
@@ -3972,13 +3972,13 @@
       <condition />
       <child nodeindex="3" />
     </option-node>
-    <dialogue-node nodeindex="2" editor-x="584" editor-y="15">
+    <dialogue-node nodeindex="2" editor-x="609" editor-y="5">
       <speak-char idTarget="Alexis">
         <resources name="No name" />
         <text>¿Como Andrea? ¿Qué pasa, que ella también es rubia?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>Jajaja. Guapa y graciosa. Me caes bien</text>
       </speak-char>
@@ -3988,17 +3988,17 @@
         <text>¿Gracias?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text>De nada</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
-        <text>#O  *Jason guiña el ojo*</text>
+        <text>#O  *Jony guiña el ojo*</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Lo que es, es una guarra</text>
       </speak-char>
@@ -4008,17 +4008,17 @@
         <text>Eh, que estás hablando de mi novia</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Pues parece que no lo sabe</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Como este fin de semana, que se ha ido de viaje con sus “amigos”</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>No sé por qué tienes novia, si luego la dejas irse con cualquiera</text>
       </speak-char>
@@ -4053,8 +4053,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" preListening="yes" editor-x="912" editor-y="31" x="912" y="31">
-      <speak-player>
+    <option-node nodeindex="4" question="Jony_Vida_Viaje_Amigos" random="yes" preListening="yes" editor-x="912" editor-y="31" x="912" y="31">
+      <speak-player correct="true">
         <text>*Qué bueno es, que le “deja” irse con sus amigos*</text>
         <resources name="No name" />
       </speak-player>
@@ -4067,21 +4067,21 @@
       <condition />
       <child nodeindex="6" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="458" editor-y="540" x="458" y="540">
+    <option-node nodeindex="5" question="Jony_Vida_Permiso_Andrea_Viaje" random="yes" keepShowing="yes" preListening="yes" editor-x="355" editor-y="453" x="355" y="453">
       <speak-player>
         <text>*A ver qué más dicen*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="6" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Mejor voy a interrumpir*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <dialogue-node nodeindex="6" editor-x="1296" editor-y="37">
+    <dialogue-node nodeindex="6" editor-x="1307" editor-y="74">
       <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>Porque confío en ella. Pero mira esto</text>
@@ -4102,7 +4102,7 @@
         <text>#! ¡Pero si casi se le ve hasta el alma!</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jason">
+      <speak-char idTarget="Jony">
         <resources name="No name" />
         <text> Le queda muy bien ese bikini</text>
       </speak-char>
@@ -4120,7 +4120,7 @@
         <text>¿Dejarla? ¿Necesita su permiso para irse de viaje?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text> Es su novia, ¿no? Digo yo que estas cosas se deciden en pareja</text>
       </speak-char>
@@ -4140,22 +4140,22 @@
       <condition />
       <child nodeindex="10" />
     </dialogue-node>
-    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="1085" editor-y="667" x="1085" y="667">
-      <speak-player>
+    <option-node nodeindex="9" question="Jony_Vida_Relacion_Toxica" random="yes" keepShowing="yes" preListening="yes" editor-x="1085" editor-y="667" x="1085" y="667">
+      <speak-player correct="true">
         <text>¿Es tóxica si no hace lo que tú quieres?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="11" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Y no se vuelve tóxica si le dices lo que puede y no puede hacer?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="12" />
     </option-node>
-    <option-node nodeindex="10" random="yes" preListening="yes" editor-x="2430" editor-y="176" x="2430" y="176">
-      <speak-player>
+    <option-node nodeindex="10" question="Jony_Vida_Defender_Andrea" random="yes" preListening="yes" editor-x="2430" editor-y="176" x="2430" y="176">
+      <speak-player correct="true">
         <text>*Defender a Andrea*</text>
         <resources name="No name" />
       </speak-player>
@@ -4169,7 +4169,7 @@
       <child nodeindex="14" />
     </option-node>
     <dialogue-node nodeindex="11" editor-x="1366" editor-y="419">
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>No es lo que él “quiera”. Se trata de lo que ella debería hacer</text>
       </speak-char>
@@ -4184,7 +4184,7 @@
         <text>¿Como por ejemplo...?</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Jony">
+      <speak-char idTarget="Jason">
         <resources name="No name" />
         <text>Debería preguntarle a su novio si le parece bien que desaparezca todo el fin de semana</text>
       </speak-char>
@@ -4201,7 +4201,7 @@
       <condition />
       <child nodeindex="15" />
     </dialogue-node>
-    <dialogue-node nodeindex="12" editor-x="1324" editor-y="987">
+    <dialogue-node nodeindex="12" editor-x="1340" editor-y="968">
       <speak-char idTarget="Diego">
         <resources name="No name" />
         <text>¿Por qué?</text>
@@ -4345,14 +4345,14 @@
       <condition />
       <child nodeindex="16" />
     </dialogue-node>
-    <option-node nodeindex="15" random="yes" keepShowing="yes" preListening="yes" editor-x="1666" editor-y="564" x="1666" y="564">
-      <speak-player>
+    <option-node nodeindex="15" question="Jony_Vida_Vigilar_Redes_Sociales" random="yes" keepShowing="yes" preListening="yes" editor-x="1666" editor-y="564" x="1666" y="564">
+      <speak-player correct="true">
         <text>¿Le vigilas su Fotogram?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="17" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Qué pasa? Sale guapísima</text>
         <resources name="No name" />
       </speak-player>
@@ -4474,14 +4474,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="566" editor-y="57" x="566" y="57">
+    <option-node nodeindex="1" question="Jony_Trabajo_CuidarmeSola" random="yes" keepShowing="yes" preListening="yes" editor-x="566" editor-y="57" x="566" y="57">
       <speak-player>
         <text>Gracias, supongo</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>Puedo cuidarme sola, te lo agradezco</text>
         <resources name="No name" />
       </speak-player>
@@ -4506,8 +4506,8 @@
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
-    <option-node nodeindex="3" random="yes" keepShowing="yes" preListening="yes" editor-x="1595" editor-y="21" x="1595" y="21">
-      <speak-player>
+    <option-node nodeindex="3" question="Jony_Trabajo_Mujeres_En_El_Trabajo" random="yes" keepShowing="yes" preListening="yes" editor-x="1259" editor-y="19" x="1259" y="19">
+      <speak-player correct="true">
         <text>¿Insinuas que no soy capaz de trabajar tan bien como tú solo por ser mujer?</text>
         <resources name="No name" />
       </speak-player>
@@ -4680,8 +4680,8 @@
       <condition />
       <child nodeindex="9" />
     </option-node>
-    <option-node nodeindex="7" random="yes" keepShowing="yes" preListening="yes" editor-x="954" editor-y="416" x="954" y="416">
-      <speak-player>
+    <option-node nodeindex="7" question="Jony_Trabajo_Entrevistas_Machistas" random="yes" keepShowing="yes" preListening="yes" editor-x="818" editor-y="502" x="818" y="502">
+      <speak-player correct="true">
         <text>Mi entrevista, por ejemplo, no fue precisamente justa</text>
         <resources name="No name" />
       </speak-player>
@@ -4820,14 +4820,14 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="355" editor-y="78" x="355" y="78">
-      <speak-player>
+    <option-node nodeindex="1" question="Jony_Aficiones_Mujeres_Jugadoras" random="yes" keepShowing="yes" preListening="yes" editor-x="355" editor-y="78" x="355" y="78">
+      <speak-player correct="true">
         <text>Pues no entiendo de qué te extrañas</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="2" />
-      <speak-player>
+      <speak-player correct="true">
         <text>¿Te sientes intimidado porque una chica pueda jugar mejor que tú un videojuego?</text>
         <resources name="No name" />
       </speak-player>
@@ -4965,8 +4965,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="1781" editor-y="62" x="1781" y="62">
-      <speak-player>
+    <option-node nodeindex="4" question="Jony_Aficiones_Exageraciones" random="yes" keepShowing="yes" preListening="yes" editor-x="1546" editor-y="78" x="1546" y="78">
+      <speak-player correct="true">
         <text>Y tanto que exageran</text>
         <resources name="No name" />
       </speak-player>
@@ -4979,14 +4979,14 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="5" preListening="yes" editor-x="533" editor-y="523" x="533" y="523">
+    <option-node nodeindex="5" question="Jony_Aficiones_Pareces_Gay" preListening="yes" editor-x="533" editor-y="523" x="533" y="523">
       <speak-player>
-        <text>Bueno, no te preocupes por esa cosas, Diego</text>
+        <text>Bueno, no te preocupes por esas cosas, Diego</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
+      <speak-player correct="true">
         <text>...</text>
         <resources name="No name" />
       </speak-player>
@@ -5147,8 +5147,8 @@
       <condition />
       <child nodeindex="4" />
     </dialogue-node>
-    <option-node nodeindex="9" random="yes" keepShowing="yes" preListening="yes" editor-x="3225" editor-y="87" x="3225" y="87">
-      <speak-player>
+    <option-node nodeindex="9" question="Jony_Aficiones_League_Of_Legends" random="yes" keepShowing="yes" preListening="yes" editor-x="2956" editor-y="120" x="2956" y="120">
+      <speak-player correct="true">
         <text>*Le tengo que contestar*</text>
         <resources name="No name" />
       </speak-player>
@@ -5379,8 +5379,8 @@
         <condition />
       </effect>
     </dialogue-node>
-    <option-node nodeindex="13" random="yes" keepShowing="yes" preListening="yes" editor-x="2588" editor-y="732" x="2588" y="732">
-      <speak-player>
+    <option-node nodeindex="13" question="Jony_Aficiones_Futbolistas_Sueldo" random="yes" keepShowing="yes" preListening="yes" editor-x="2588" editor-y="732" x="2588" y="732">
+      <speak-player correct="true">
         <text>Nada que ver, solamente se dedican a lo mismo…</text>
         <resources name="No name" />
       </speak-player>
@@ -5393,7 +5393,7 @@
       <condition />
       <child nodeindex="16" />
     </option-node>
-    <option-node nodeindex="14" random="yes" preListening="yes" editor-x="4506" editor-y="159" x="4506" y="159">
+    <option-node nodeindex="14" question="Jony_Aficiones_Se_Van_De_La_Mesa" random="yes" preListening="yes" editor-x="4506" editor-y="159" x="4506" y="159">
       <speak-player>
         <text>Para estar con gente así prefiero que se vayan</text>
         <resources name="No name" />
@@ -5719,14 +5719,14 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="18" random="yes" preListening="yes" editor-x="3747" editor-y="451" x="3747" y="451">
+    <option-node nodeindex="18" question="Jony_Aficiones_Futbol_Femenino_Talento" random="yes" preListening="yes" editor-x="3619" editor-y="446" x="3619" y="446">
       <speak-player>
         <text>*Dejar la mesa* </text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="20" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Seguir opinando*</text>
         <resources name="No name" />
       </speak-player>
@@ -5968,8 +5968,8 @@
       <condition />
       <child nodeindex="1" />
     </dialogue-node>
-    <option-node nodeindex="1" random="yes" keepShowing="yes" preListening="yes" editor-x="289" editor-y="129" x="289" y="129">
-      <speak-player>
+    <option-node nodeindex="1" question="Jony_Finde_Mitad_Acera" random="yes" keepShowing="yes" preListening="yes" editor-x="289" editor-y="129" x="289" y="129">
+      <speak-player correct="true">
         <text>*Creo que debería decir algo*</text>
         <resources name="No name" />
       </speak-player>
@@ -6063,8 +6063,8 @@
       <condition />
       <child nodeindex="5" />
     </dialogue-node>
-    <option-node nodeindex="4" random="yes" keepShowing="yes" preListening="yes" editor-x="968" editor-y="97" x="968" y="97">
-      <speak-player>
+    <option-node nodeindex="4" question="Jony_Finde_Homofobia" random="yes" keepShowing="yes" preListening="yes" editor-x="968" editor-y="97" x="968" y="97">
+      <speak-player correct="true">
         <text>*Insistir*</text>
       </speak-player>
       <condition />
@@ -6076,14 +6076,14 @@
       <condition />
       <child nodeindex="7" />
     </option-node>
-    <option-node nodeindex="5" random="yes" keepShowing="yes" preListening="yes" editor-x="696" editor-y="543" x="696" y="543">
+    <option-node nodeindex="5" question="Jony_Finde_Continuar_Chiste" random="yes" keepShowing="yes" preListening="yes" editor-x="696" editor-y="543" x="696" y="543">
       <speak-player>
         <text>*Continuar el chiste sobre Diego*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="8" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*...*</text>
         <resources name="No name" />
       </speak-player>
@@ -6277,8 +6277,8 @@
       <condition />
       <child nodeindex="12" />
     </dialogue-node>
-    <option-node nodeindex="10" preListening="yes" editor-x="1984" editor-y="197" x="1984" y="197">
-      <speak-player>
+    <option-node nodeindex="10" question="Jony_Finde_Forma_Vestir" preListening="yes" editor-x="1984" editor-y="197" x="1984" y="197">
+      <speak-player correct="true">
         <text>¿Me estás vacilando?</text>
         <resources name="No name" />
       </speak-player>
@@ -6291,7 +6291,7 @@
       <condition />
       <child nodeindex="14" />
     </option-node>
-    <option-node nodeindex="11" random="yes" keepShowing="yes" preListening="yes" editor-x="1583" editor-y="719" x="1583" y="719">
+    <option-node nodeindex="11" question="Jony_Finde_Andrea_Discoteca" random="yes" keepShowing="yes" preListening="yes" editor-x="1541" editor-y="732" x="1541" y="732">
       <speak-player>
         <text>¿Porque le gusta divertirse?</text>
         <resources name="No name" />
@@ -6305,8 +6305,8 @@
       <condition />
       <child nodeindex="16" />
     </option-node>
-    <option-node nodeindex="12" random="yes" keepShowing="yes" preListening="yes" editor-x="1584" editor-y="1090" x="1584" y="1090">
-      <speak-player>
+    <option-node nodeindex="12" question="Jony_Finde_Con_Cualquiera_Encontreis" random="yes" keepShowing="yes" preListening="yes" editor-x="1141" editor-y="1069" x="1141" y="1069">
+      <speak-player correct="true">
         <text>¿Y qué problema habría?</text>
         <resources name="No name" />
       </speak-player>
@@ -6697,8 +6697,8 @@
       <condition />
       <child nodeindex="22" />
     </dialogue-node>
-    <option-node nodeindex="19" random="yes" keepShowing="yes" preListening="yes" editor-x="2766" editor-y="105" x="2766" y="105">
-      <speak-player>
+    <option-node nodeindex="19" question="Jony_Finde_Relacion_1_20" random="yes" keepShowing="yes" preListening="yes" editor-x="2766" editor-y="105" x="2766" y="105">
+      <speak-player correct="true">
         <text>*Responderle*</text>
         <resources name="No name" />
       </speak-player>
@@ -6749,7 +6749,7 @@
       <condition />
       <child nodeindex="25" />
     </dialogue-node>
-    <option-node nodeindex="21" random="yes" keepShowing="yes" preListening="yes" editor-x="2347" editor-y="1112" x="2347" y="1112">
+    <option-node nodeindex="21" question="Jony_Finde_Lista_Insultos" random="yes" keepShowing="yes" preListening="yes" editor-x="2347" editor-y="1112" x="2347" y="1112">
       <speak-player>
         <text>La verdad es que se me están quitando las ganas...</text>
         <resources name="No name" />
@@ -6763,14 +6763,14 @@
       <condition />
       <child nodeindex="26" />
     </option-node>
-    <option-node nodeindex="22" preListening="yes" editor-x="2273" editor-y="1444" x="2273" y="1444">
+    <option-node nodeindex="22" question="Jony_Finde_Mujeres_Que_Se_Cuidan" preListening="yes" editor-x="2273" editor-y="1444" x="2273" y="1444">
       <speak-player>
         <text>*Mejor me voy*</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="27" />
-      <speak-player>
+      <speak-player correct="true">
         <text>*Contestar*</text>
         <resources name="No name" />
       </speak-player>
@@ -6945,14 +6945,14 @@
       <condition />
       <child nodeindex="29" />
     </dialogue-node>
-    <option-node nodeindex="25" preListening="yes" editor-x="2932" editor-y="828" x="2932" y="828">
-      <speak-player>
+    <option-node nodeindex="25" question="Jony_Finde_Final_Manicura" preListening="yes" editor-x="2932" editor-y="828" x="2932" y="828">
+      <speak-player correct="true">
         <text>¿No me lo llevas tomando tú todo el tiempo?</text>
         <resources name="No name" />
       </speak-player>
       <condition />
       <child nodeindex="30" />
-      <speak-player>
+      <speak-player correct="true">
         <text>No, creo que nos lo pasaremos bien.</text>
         <resources name="No name" />
       </speak-player>
@@ -7159,7 +7159,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <option-node nodeindex="29" random="yes" keepShowing="yes" preListening="yes" editor-x="3354" editor-y="451" x="3354" y="451">
+    <option-node nodeindex="29" question="Jony_Finde_Huyendo_Grupo" random="yes" keepShowing="yes" preListening="yes" editor-x="3354" editor-y="451" x="3354" y="451">
       <speak-player>
         <text>En fin, ya nos veremos, chicos</text>
         <resources name="No name" />
@@ -7354,6 +7354,11 @@
       <speak-char idTarget="Narrador_Auxiliar">
         <resources name="No name" />
         <text>Queremos agradecer especialmente a Víctor y a Balta, por facilitarnos las herramientas y el conocimiento necesario.</text>
+      </speak-char>
+      <condition />
+      <speak-char idTarget="Narrador_Auxiliar">
+        <resources name="No name" />
+        <text>También queremos agradecer al resto de compañeros por todo su apoyo y sus consejos para mejorar</text>
       </speak-char>
       <condition />
       <end-conversation>
