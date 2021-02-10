@@ -7346,21 +7346,6 @@
         <text>No aguantes que el sexismo continúe existiendo.</text>
       </speak-char>
       <condition />
-      <speak-char idTarget="Narrador_Auxiliar">
-        <resources name="No name" />
-        <text>Este proyecto ha sido desarrollado por Stiven Arias, Paula Martínez y Ana Martín, con ayuda de Cristina Alonso.</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Narrador_Auxiliar">
-        <resources name="No name" />
-        <text>Queremos agradecer especialmente a Víctor y a Balta, por facilitarnos las herramientas y el conocimiento necesario.</text>
-      </speak-char>
-      <condition />
-      <speak-char idTarget="Narrador_Auxiliar">
-        <resources name="No name" />
-        <text>También queremos agradecer al resto de compañeros por todo su apoyo y sus consejos para mejorar</text>
-      </speak-char>
-      <condition />
       <end-conversation>
         <effect>
           <trigger-cutscene idTarget="FIN_Cutscene" />
